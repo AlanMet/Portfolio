@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Alan</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <span class="name">Alan</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <div class="right-nav">
+            <a href="https://github.com/AlanMet" class="github-icon">
+                <i class="ri-github-line"></i>
+            </a>
+            <a href="Alan.pdf" class="cv-icon">
+                <i class="ri-article-line"></i>
+            </a>
+            <a href=""><i class="ri-sun-line"></i></a>
+        </div>
+    </nav>
+    <main class="projects-container">
+        <h1 class="projects-main-title">Technical Explorations</h1>
+        
+        <div class="projects-grid">
+            <!-- Study Buddy App -->
+            <article class="project-card">
+                <h3>Study Buddy Finder</h3>
+                <p>Led team of 6 developers in creating a ML-powered matching system for student collaboration</p>
+                <div class="project-tags">
+                    <span>Leadership</span>
+                    <span>Flutter</span>
+                    <span>Firebase</span>
+                </div>
+            </article>
+
+            <!-- ML Libraries -->
+            <article class="project-card highlight">
+                <h3>Dart ML Stack</h3>
+                <p>Built from-scratch matrix library and neural network implementation with automatic differentiation</p>
+                <div class="project-tags">
+                    <span>Machine Learning</span>
+                    <span>Dart</span>
+                    <span>Linear Algebra</span>
+                </div>
+            </article>
+
+            <!-- Research Paper -->
+            <article class="project-card">
+                <h3>FL Security Research</h3>
+                <p>Co-authored paper on novel defense mechanisms against poisoning attacks in federated learning</p>
+                <div class="project-tags">
+                    <span>Research</span>
+                    <span>Cybersecurity</span>
+                    <span>Python</span>
+                </div>
+            </article>
+
+            <!-- Race Timer -->
+            <article class="project-card">
+                <h3>Precision Race Timer</h3>
+                <p>Low-latency timing system with WebSocket synchronization for competitive events</p>
+                <div class="project-tags">
+                    <span>WebSockets</span>
+                    <span>JavaScript</span>
+                    <span>UX Design</span>
+                </div>
+            </article>
+
+            <!-- Language Models -->
+            <article class="project-card">
+                <h3>Shakespearean Text Generator</h3>
+                <p>Encoder-decoder model trained on early modern English texts with attention mechanisms</p>
+                <div class="project-tags">
+                    <span>NLP</span>
+                    <span>PyTorch</span>
+                    <span>Python</span>
+                </div>
+            </article>
+
+            <!-- Reinforcement Learning -->
+            <article class="project-card">
+                <h3>RL Tic-Tac-Toe</h3>
+                <p>Q-learning agent trained through self-play with adjustable difficulty levels</p>
+                <div class="project-tags">
+                    <span>Reinforcement Learning</span>
+                    <span>Python</span>
+                </div>
+            </article>
+        </div>
+    </main>
+    <svg width="0" height="0" style="position:absolute">
+        <filter id="grainy">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" result="noise"/>
+          <feColorMatrix type="saturate" values="0"/>
+          <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+        </filter>
+    </svg>
+</body>
+</html>
