@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="left-nav">
+                <!-- &lt;/&gt; for </> -->
+                <span class="name">Alan</span>
+                <a href="#index">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="right-nav">
+                <a href="https://github.com/AlanMet" class="github-icon">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="cv.pdf" class="cv-icon">
+                    <i class="ri-article-line"></i>
+                </a>
+                <a href=""><i class="ri-sun-line"></i></a>
+            </div>
+        </nav>
+        <main class="hero-container">
+            <section class="hero-top">
+                <h1>Full Stack Developer</h1>
+            </section>
+            <section class="hero-bottom">
+                <div class="about-left">
+                    <h2 class="about-title">About Me</h2> <!-- This is the bolded title -->
+                    <p class="about-text">
+                        I’m a passionate full-stack developer focused on creating high quality projects in various languages. 
+                        I specialize in many fields such as app development. 
+                        My expertise spans front-end and back-end such as artificial intelligence. 
+                        I aim to create seamless digital experiences while adhering to best practices.
+                    </p>
+                    <a href="#" class="read-more">Read more →</a>
+                </div>
+                <div class="about-right">
+                </div>
+            </section>            
+        </main>
+        <svg width="0" height="0" style="position:absolute">
+            <filter id="grainy">
+              <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" result="noise"/>
+              <feColorMatrix type="saturate" values="0"/>
+              <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+            </filter>
+          </svg>
+    </body>
+</html>
