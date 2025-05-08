@@ -1,99 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Alan</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="about-page-title">About | Alan</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <nav>
-        <div class="left-nav">
-            <span class="name">Alan</span>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
+  <nav>
+    <div class="left-nav">
+      <span class="name" data-i18n="name"></span>
+      <a href="index.html" data-i18n="home-header"></a>
+      <a href="about.html" data-i18n="about-header"></a>
+      <a href="projects.html" data-i18n="projects-header"></a>
+    </div>
+    <div class="right-nav">
+      <div class="lang-switcher">
+        <select id="lang-select" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+      <a href="https://github.com/AlanMet" class="github-icon">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="Alan.pdf" class="cv-icon">
+        <i class="ri-article-line"></i>
+      </a>
+      <a id="theme-toggle"><i class="ri-sun-line"></i></a>
+    </div>
+  </nav>
+
+  <main class="about-container">
+    <section class="about-hero">
+      <h1 class="about-main-title" data-i18n="about-main-title"></h1>
+      <div class="about-content">
+        <div class="about-text-column">
+          <p class="about-lead" data-i18n="about-lead"></p>
+          <div class="about-details">
+            <p data-i18n="about-detail-1"></p>
+            <p data-i18n="about-detail-2"></p>
+          </div>
         </div>
-        <div class="right-nav">
-            <a href="https://github.com/AlanMet" class="github-icon">
-                <i class="ri-github-line"></i>
-            </a>
-            <a href="Alan.pdf" class="cv-icon">
-                <i class="ri-article-line"></i>
-            </a>
-            <a href=""><i class="ri-sun-line"></i></a>
+        <div class="about-grid">
+          <div class="grid-column">
+            <h3 data-i18n="grid-frontend-title"></h3>
+            <ul>
+              <li data-i18n="grid-frontend-item-html"></li>
+              <li data-i18n="grid-frontend-item-flutter"></li>
+              <li data-i18n="grid-frontend-item-figma"></li>
+              <li data-i18n="grid-frontend-item-tkinter"></li>
+            </ul>
+          </div>
+          <div class="grid-column">
+            <h3 data-i18n="grid-backend-title"></h3>
+            <ul>
+              <li data-i18n="grid-backend-item-node"></li>
+              <li data-i18n="grid-backend-item-python"></li>
+              <li data-i18n="grid-backend-item-csharp"></li>
+              <li data-i18n="grid-backend-item-dart"></li>
+            </ul>
+          </div>
+          <div class="grid-column">
+            <h3 data-i18n="grid-tools-title"></h3>
+            <ul>
+              <li data-i18n="grid-tools-item-git"></li>
+              <li data-i18n="grid-tools-item-azure"></li>
+              <li data-i18n="grid-tools-item-firebase"></li>
+              <li data-i18n="grid-tools-item-sql"></li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <main class="about-container">
-        <section class="about-hero">
-            <h1 class="about-main-title">Building Digital Experiences with Precision</h1>
-            <div class="about-content">
-                <div class="about-text-column">
-                    <p class="about-lead">
-                        With nearly 10 years of experience in full-stack development, I specialize in creating efficient, 
-                        scalable solutions that bridge technical excellence with user-centric design.
-                    </p>
-                    <div class="about-details">
-                        <p>
-                            My journey in technology began with a fascination for problem-solving through code. 
-                            Over the years, I've honed my skills across the entire development stack, always 
-                            prioritizing clean architecture and maintainable code.
-                        </p>
-                        <p>
-                            When not coding, I study various subjects such as Artificial Intelligence. I have a deep interest for learning, especially topics regarding the sciences such as physics and maths. I'm always keen to learn about new subjects such as genetic engineering and engineering.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-grid">
-                    <div class="grid-column">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>Html</li>
-                            <li>Flutter</li>
-                            <li>Figma</li>
-                            <li>Tkinter</li>
-                        </ul>
-                    </div>
-                    <div class="grid-column">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>C#</li>
-                            <li>dart</li>
-                        </ul>
-                    </div>
-                    <div class="grid-column">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Microsoft Azure</li>
-                            <li>Firebase</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-contact">
-            <h2 class="contact-title">Contact</h2>
-            <div class="contact-links">
-                <a href="alanmetwally@gmail.com" class="contact-link">
-                    <i class="ri-mail-line"></i> alanmetwally@gmail.com
-                </a>
-                <!-- <a href="https://linkedin.com/in/alan" class="contact-link">
-                    <i class="ri-linkedin-box-line"></i> LinkedIn
-                </a> -->
-            </div>
-        </section>
-    </main>
-    <svg width="0" height="0" style="position:absolute">
-        <filter id="grainy">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" result="noise"/>
-          <feColorMatrix type="saturate" values="0"/>
-          <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
-        </filter>
-    </svg>
+      </div>
+    </section>
+    <section class="about-contact">
+      <h2 class="contact-title" data-i18n="contact-title"></h2>
+      <div class="contact-links">
+        <a href="mailto:alanmetwally@gmail.com" class="contact-link">
+          <i class="ri-mail-line"></i> <span data-i18n="contact-email"></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="grainy">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+  </svg>
+
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/language.js"></script>
 </body>
 </html>

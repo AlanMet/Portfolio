@@ -58,6 +58,41 @@ body {
     padding: 0;
 }
 
+/* ==== RTL FIXES ==== */
+html[dir="rtl"] {
+    /* ensure flex items respect RTL flow */
+    direction: rtl;
+  }
+  
+  
+  html[dir="rtl"] .left-nav .name {
+    margin-right: 0;    /* cancel the LTR margin */
+    margin-left: 30px;  /* same gap but on the other side */
+  }
+  
+  html[dir="rtl"] .left-nav a,
+  html[dir="rtl"] .right-nav a {
+    margin-left: 0;     /* cancel LTR margin */
+    margin-right: 20px; /* swap to right side */
+  }
+  
+  html[dir="rtl"] nav a i {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  
+  /* 2. Hero title: hug the right edge */
+  html[dir="rtl"] .hero-top {
+    justify-content: flex-end; /* move items to the right */
+  }
+  
+  html[dir="rtl"] .hero-top h1 {
+    text-align: right;     /* right‑align the text */
+    margin-left: 0;        /* cancel the LTR negative offset */
+    margin-right: -15px;    /* mirror the -15px offset on the right */
+  }
+  
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);

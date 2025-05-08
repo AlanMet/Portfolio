@@ -1,5 +1,6 @@
 const defaultLanguage = "en";
 const languagePath = "/languages/";
+const languageSelector = document.querySelector("#lang-select");
 
 function setLanguage(lang) {
     localStorage.setItem("lang", lang);
@@ -61,6 +62,10 @@ function getInitialLanguage(){
     return getSavedLanguage() || getBrowserLanguage();
 }
 
+function changeLanguage(){
+    setLanguage(languageSelector.value);
+}
+
 function loaded(){
 const lang = getInitialLanguage();
   configurePageLanguage(lang);
@@ -68,3 +73,4 @@ const lang = getInitialLanguage();
 }
 
 document.addEventListener("DOMContentLoaded", loaded);
+languageSelector.addEventListener("change", changeLanguage);
