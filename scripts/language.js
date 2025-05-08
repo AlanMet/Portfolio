@@ -23,12 +23,25 @@ function applyTranslations(data) {
     });
 }
 
+const languageCache = {};
+
 function fetchTranslationData(lang) {
-    console.log("Attempting to fetch");
-    return fetch(`/languages/${lang}.json`)
-        .then(response => response.json())
+    if (languageCache[lang]) {
+        return Promise.resolve(languageCache[lang]);
+    }
+
+    console.log(`Fetching ${lang}...`);
+    return fetch(`./languages/${lang}.json`)
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+            return response.json();
+        })
         .then(data => {
+            languageCache[lang] = data;
             return data;
+        })
+        .catch(err => {
+            console.error("Translation load error:", err.message);
         });
 }
 
