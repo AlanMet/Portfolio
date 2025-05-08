@@ -14,6 +14,7 @@ function handleTranslationError(error) {
   
 
 function applyTranslations(data) {
+    console.log("Applying translations");
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.dataset.i18n;
       if (data[key]) {
@@ -23,6 +24,7 @@ function applyTranslations(data) {
 }
 
 function fetchTranslationData(lang) {
+    console.log("Attempting to fetch");
     return fetch(`/languages/${lang}.json`)
         .then(response => response.json())
         .then(data => {
