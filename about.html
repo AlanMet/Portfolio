@@ -10,10 +10,10 @@
 <body>
   <nav>
     <div class="left-nav">
-      <span class="name" data-i18n="name"></span>
-      <a href="index.html" data-i18n="home-header"></a>
-      <a href="about.html" data-i18n="about-header"></a>
-      <a href="projects.html" data-i18n="projects-header"></a>
+      <span class="name" data-i18n="name">Alan</span>
+      <a href="index.html" data-i18n="home-header">Home</a>
+      <a href="about.html" data-i18n="about-header">About</a>
+      <a href="projects.html" data-i18n="projects-header">Projects</a>
     </div>
     <div class="right-nav">
       <div class="lang-switcher">
@@ -24,10 +24,10 @@
         </select>
         <i class="ri-arrow-down-s-line"></i>
       </div>
-      <a href="https://github.com/AlanMet" class="github-icon">
+      <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
         <i class="ri-github-line"></i>
       </a>
-      <a href="Alan.pdf" class="cv-icon">
+      <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
         <i class="ri-article-line"></i>
       </a>
       <a id="theme-toggle"><i class="ri-sun-line"></i></a>
@@ -76,14 +76,6 @@
         </div>
       </div>
     </section>
-    <section class="about-contact">
-      <h2 class="contact-title" data-i18n="contact-title"></h2>
-      <div class="contact-links">
-        <a href="mailto:alanmetwally@gmail.com" class="contact-link">
-          <i class="ri-mail-line"></i> <span data-i18n="contact-email"></span>
-        </a>
-      </div>
-    </section>
   </main>
 
   <svg width="0" height="0" style="position:absolute">
@@ -93,6 +85,24 @@
       <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
     </filter>
   </svg>
+
+  <script>
+      // This script runs instantly to prevent a theme flash.
+      (function() {
+          function getInitialTheme() {
+              const savedTheme = localStorage.getItem('theme');
+              if (savedTheme) {
+                  return savedTheme;
+              }
+              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              return prefersDark ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', getInitialTheme());
+      })();
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/style.css">
 
   <script src="scripts/theme.js"></script>
   <script src="scripts/language.js"></script>

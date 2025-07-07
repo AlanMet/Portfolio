@@ -24,13 +24,41 @@
                     </select>
                     <i class="ri-arrow-down-s-line"></i>
                 </div>
-                <a href="https://github.com/AlanMet" class="github-icon">
+                <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
                     <i class="ri-github-line"></i>
                 </a>
-                <a href="Alan.pdf" class="cv-icon">
+                <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
                     <i class="ri-article-line"></i>
                 </a>
                 <a id="theme-toggle"><i class="ri-sun-line"></i></a>
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="mobile-nav">
+                <div class="mobile-nav-top">
+                    <a href="index.html" data-i18n="home-header">Home</a>
+                    <a href="about.html" data-i18n="about-header">About</a>
+                    <a href="projects.html" data-i18n="projects-header">Projects</a>
+                </div>
+                <div class="mobile-nav-bottom">
+                    <div class="lang-switcher">
+                        <select id="mobile-lang-select" aria-label="Select language">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="ar">AR</option>
+                        </select>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
+                        <i class="ri-article-line"></i>
+                    </a>
+                    <a id="mobile-theme-toggle"><i class="ri-sun-line"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -61,7 +89,26 @@
             </filter>
         </svg>
 
+        <script>
+            // This script runs instantly to prevent a theme flash.
+            (function() {
+                function getInitialTheme() {
+                    const savedTheme = localStorage.getItem('theme');
+                    if (savedTheme) {
+                        return savedTheme;
+                    }
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    return prefersDark ? 'dark' : 'light';
+                }
+                document.documentElement.setAttribute('data-theme', getInitialTheme());
+            })();
+        </script>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles/style.css">
+
         <script src="scripts/theme.js"></script>
         <script src="scripts/language.js"></script>
+        <script src="scripts/mobile-nav.js"></script>
     </body>
 </html>

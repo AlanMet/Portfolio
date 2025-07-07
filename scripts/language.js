@@ -81,8 +81,16 @@ function changeLanguage(){
     setLanguage(languageSelector.value);
 }
 
-function loaded(){
-const lang = getInitialLanguage();
+async function loaded() {
+  // First, check if the project initializer function exists
+  if (typeof initializeProjects === 'function') {
+    // If it exists, wait for it to finish loading and rendering the projects
+    await initializeProjects();
+  }
+  
+  // NOW, with the projects loaded, proceed with translation
+  const lang = getInitialLanguage();
+  languageSelector.value = lang;
   configurePageLanguage(lang);
   loadAndApplyTranslations(lang);
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "titleKey": "proj-study-buddy-title",
+    "descKey": "proj-study-buddy-desc",
+    "tags": ["Leadership", "Flutter", "Firebase"],
+    "link": "https://github.com/AlanMet/StudyBuddyFinder"
+  },
+  {
+    "titleKey": "proj-dart-ml-title",
+    "descKey": "proj-dart-ml-desc",
+    "tags": ["Machine Learning", "Dart", "Linear Algebra"],
+    "link": "https://github.com/AlanMet/DartML"
+  },
+  {
+    "titleKey": "proj-fl-research-title",
+    "descKey": "proj-fl-research-desc",
+    "tags": ["Research", "Cybersecurity", "Python"],
+    "link": "https://github.com/AlanMet/FL-Research"
+  },
+  {
+    "titleKey": "proj-race-timer-title",
+    "descKey": "proj-race-timer-desc",
+    "tags": ["WebSockets", "JavaScript", "UX Design"],
+    "link": "https://github.com/AlanMet/RaceTimer"
+  },
+  {
+    "titleKey": "proj-token-lib-title",
+    "descKey": "proj-token-lib-desc",
+    "tags": ["Dart", "NLP"],
+    "link": "https://github.com/AlanMet/DartTokenizer"
+  },
+  {
+    "titleKey": "proj-shakespeare-title",
+    "descKey": "proj-shakespeare-desc",
+    "tags": ["NLP", "Python"],
+    "link": "https://github.com/AlanMet/ShakespeareGenerator"
+  },
+  {
+    "titleKey": "proj-cmd-parser-title",
+    "descKey": "proj-cmd-parser-desc",
+    "tags": ["C#", "Dart", "Flutter"],
+    "link": "https://github.com/AlanMet/CommandParser"
+  },
+  {
+    "titleKey": "proj-rl-ttt-title",
+    "descKey": "proj-rl-ttt-desc",
+    "tags": ["Reinforcement Learning", "Python"],
+    "link": "https://github.com/AlanMet/RL-TicTacToe"
+  },
+  {
+    "titleKey": "proj-smart-home-title",
+    "descKey": "proj-smart-home-desc",
+    "tags": ["Python", "Tkinter"],
+    "link": "https://github.com/AlanMet/SmartHomeApp"
+  },
+  {
+    "titleKey": "proj-patchwork-title",
+    "descKey": "proj-patchwork-desc",
+    "tags": ["Tkinter"],
+    "link": "https://github.com/AlanMet/PatchworkApp"
+  }
+]

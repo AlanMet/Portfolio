@@ -243,7 +243,7 @@ nav a i {
 
 .grid-column {
     padding-right: 2rem;
-    border-right: 1px solid #ddd;
+    border-right: none;
 }
 
 .grid-column:last-child {
@@ -356,10 +356,15 @@ nav a i {
 }
 
 .project-card {
-    padding: 2rem;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    transition: transform 0.2s ease;
+  padding: 2rem;
+  border: 1px solid #eee; /* This can be your default border */
+  border-radius: 4px;
+  
+  /* THIS IS THE FIX FOR THE THIN BAR */
+  border-left-width: 5px;
+  border-left-style: solid;
+  
+  transition: border-color 0.3s ease;
 }
 
 .project-card:hover {
@@ -396,6 +401,11 @@ nav a i {
     border-left: 4px solid #333;
 }
 
+.project-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-main-title {
@@ -404,6 +414,18 @@ nav a i {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        /* This rule was forcing it into one column. We are changing it back. */
+        grid-template-columns: repeat(3, 1fr); /* This keeps the 3-column layout */
+        gap: 1rem; /* You might want a smaller gap for mobile */
+    }
+
+    .grid-column {
+        /* With less space, removing the border and padding looks cleaner */
+        border: none;
+        padding: 0;
     }
 }
 
@@ -435,4 +457,147 @@ nav a i {
     pointer-events: none;
     font-size: 1.2rem;
     color: #666;
+}
+
+body, 
+.project-card, 
+.form-group input, 
+.form-group textarea,
+.form-button {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Ensure links also transition smoothly */
+a, nav a i {
+    transition: color 0.4s ease;
+}
+
+/* Define the spin-and-fade animation for the theme icon */
+@keyframes spin-and-fade {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* A class to apply the animation when triggered */
+.icon-animating {
+  animation: spin-and-fade 0.4s ease-in-out;
+}
+
+.nav-toggle {
+    display: none; /* Hidden on desktop */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it's above other content */
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 2em;
+    height: 3px;
+    background: var(--text-color);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger::before {
+    position: absolute;
+    bottom: 8px;
+}
+
+.hamburger::after {
+    position: absolute;
+    top: 8px;
+}
+
+/* --- Mobile navigation panel styles --- */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.mobile-nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile-nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mobile-nav-top a {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mobile-nav-bottom .lang-switcher {
+    margin: 0;
+}
+
+.mobile-nav-bottom a i {
+    font-size: 2.5rem;
+}
+
+
+/* --- State changes when menu is open --- */
+.nav-open .hamburger {
+    transform: rotate(0.625turn); /* Rotates the middle bar 225 degrees */
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-8px); /* Rotates the bottom bar to form the 'X' */
+}
+
+.nav-open .hamburger::after {
+    opacity: 0; /* Hides the top bar */
+}
+
+.nav-open .mobile-nav {
+    transform: translateX(0); /* Slides the mobile menu into view */
+}
+
+/* --- Media Query to activate the hamburger menu --- */
+@media (max-width: 675px) {
+    /* Hide the original navigation links */
+    .left-nav a,
+    .right-nav {
+        display: none;
+    }
+
+    /* Show the hamburger button */
+    .nav-toggle {
+        display: block;
+    }
 }
