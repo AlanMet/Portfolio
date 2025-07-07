@@ -533,7 +533,7 @@ a, nav a i {
     right: 0;
     width: 100%;
     height: 100vh;
-    background: var(--bg-color);
+    background-color: var(--bg-color); /* Changed from 'background' */
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -573,19 +573,18 @@ a, nav a i {
 
 /* --- State changes when menu is open --- */
 .nav-open .hamburger {
-    transform: rotate(0.625turn); /* Rotates the middle bar 225 degrees */
+    /* Make the middle bar disappear */
+    background: transparent;
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-8px); /* Rotates the bottom bar to form the 'X' */
+    /* Move the top bar to the middle and rotate it 45 degrees */
+    transform: translateY(8px) rotate(45deg);
 }
 
 .nav-open .hamburger::after {
-    opacity: 0; /* Hides the top bar */
-}
-
-.nav-open .mobile-nav {
-    transform: translateX(0); /* Slides the mobile menu into view */
+    /* Move the bottom bar to the middle and rotate it -45 degrees */
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* --- Media Query to activate the hamburger menu --- */
