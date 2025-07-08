@@ -1,23 +1,25 @@
 // scripts/theme.js
 
-const themeToggle = document.querySelector("#theme-toggle");
-const themeIcon = themeToggle.querySelector("i");
+const themeToggles = document.querySelectorAll("#theme-toggle, #mobile-theme-toggle");
+const themeIcons = document.querySelectorAll("#theme-toggle i, #mobile-theme-toggle i");
 
-function updateIcon() {
+function updateIcons() {
     // Get the current theme directly from the HTML attribute
     const currentTheme = document.documentElement.getAttribute("data-theme");
     
-    if (currentTheme === "dark") {
-        themeIcon.classList.remove("ri-sun-line");
-        themeIcon.classList.add("ri-moon-line");
-    } else {
-        themeIcon.classList.remove("ri-moon-line");
-        themeIcon.classList.add("ri-sun-line");
-    }
+    themeIcons.forEach(icon => {
+        if (currentTheme === "dark") {
+            icon.classList.remove("ri-sun-line");
+            icon.classList.add("ri-moon-line");
+        } else {
+            icon.classList.remove("ri-moon-line");
+            icon.classList.add("ri-sun-line");
+        }
+    });
 }
 
 function toggleTheme() {
-    themeIcon.classList.add("icon-animating");
+    themeIcons.forEach(icon => icon.classList.add("icon-animating"));
     
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
@@ -26,19 +28,23 @@ function toggleTheme() {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     
-    // Update the icon to reflect the new theme
-    updateIcon();
+    // Update the icons to reflect the new theme
+    updateIcons();
 }
 
 // --- Event Listeners ---
 
-// Update the icon as soon as the DOM is ready
-document.addEventListener("DOMContentLoaded", updateIcon);
+// Update the icons as soon as the DOM is ready
+document.addEventListener("DOMContentLoaded", updateIcons);
 
-// Listen for clicks on the toggle button
-themeToggle.addEventListener("click", toggleTheme);
+// Listen for clicks on the toggle buttons
+themeToggles.forEach(toggle => {
+    toggle.addEventListener("click", toggleTheme);
+});
 
 // Clean up the animation class
-themeIcon.addEventListener("animationend", () => {
-    themeIcon.classList.remove("icon-animating");
+themeIcons.forEach(icon => {
+    icon.addEventListener("animationend", () => {
+        icon.classList.remove("icon-animating");
+    });
 });

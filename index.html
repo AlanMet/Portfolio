@@ -9,8 +9,9 @@
     </head>
     <body>
         <nav>
+            <div class="nav-backdrop"></div>
             <div class="left-nav">
-                <span class="name">Alan</span>
+                <a href="index" class="name">Alan</a>
                 <a href="index" data-i18n="home-header">Home</a>
                 <a href="about" data-i18n="about-header">About</a>
                 <a href="projects" data-i18n="projects-header">Projects</a>
@@ -34,8 +35,13 @@
             </div>
 
             <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+                <div class="hamburger">
+                    <div class="hamburger__line hamburger__line--1"></div>
+                    <div class="hamburger__line hamburger__line--2"></div>
+                    <div class="hamburger__line hamburger__line--3"></div>
+                </div>
             </button>
+            
             <div class="mobile-nav">
                 <div class="mobile-nav-top">
                     <a href="index" data-i18n="home-header">Home</a>
