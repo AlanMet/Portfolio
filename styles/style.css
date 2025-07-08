@@ -60,7 +60,41 @@ html[dir="rtl"] .left-nav .name { margin-right: 0; margin-left: 30px; }
 html[dir="rtl"] .left-nav a, html[dir="rtl"] .right-nav a { margin-left: 0; margin-right: 20px; }
 html[dir="rtl"] nav a i { margin-left: 0; margin-right: 20px; }
 html[dir="rtl"] .hero-top { justify-content: flex-end; }
-html[dir="rtl"] .hero-top h1 { text-align: right; margin-left: 0; margin-right: -15px; }
+html[dir="rtl"] .hero-top h1 { 
+    text-align: right; 
+    margin-left: 0;
+    margin-right: 10px;
+    padding-right: 15px;
+}
+html[dir="rtl"] .grid-column { 
+    padding-right: 0; 
+    padding-left: 2rem; 
+}
+html[dir="rtl"] .grid-column:last-child { 
+    padding-left: 0; 
+}
+html[dir="rtl"] .mobile-nav-bottom {
+    flex-direction: row-reverse;
+}
+html[dir="rtl"] .lang-switcher i {
+    right: auto;
+    left: 4px;
+}
+html[dir="rtl"] .lang-switcher select {
+    padding: 4px 4px 4px 24px;
+}
+html[dir="rtl"] .nav-toggle {
+    left: 20px;
+    right: auto;
+}
+html[dir="rtl"] .mobile-nav {
+    left: 0;
+    right: auto;
+    transform: translateX(-100%);
+}
+html[dir="rtl"] .nav-open .mobile-nav {
+    transform: translateX(0);
+}
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -194,8 +228,13 @@ nav a i {
 .about-lead { font-size: 1.5rem; line-height: 1.4; margin-bottom: 1rem; }
 .about-details { display: flex; flex-direction: column; gap: 1.5rem; line-height: 1.6; }
 .about-grid { display: flex; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.grid-column { padding-right: 2rem; border: none; border-right: none; border-bottom: none; }
-.grid-column:last-child { padding-right: 0; }
+.grid-column { 
+    padding-right: 2rem; 
+    border: none;
+}
+.grid-column:last-child { 
+    padding-right: 0; 
+}
 .grid-column h3 { font-weight: 500; margin-bottom: 1.5rem; font-size: 1.1rem; }
 .grid-column ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem; }
 .grid-column li { font-size: 0.95rem; color: #666; }
@@ -322,6 +361,10 @@ body.nav-open .nav-backdrop {
     padding: 1rem 0;
     position: relative;
     z-index: 1;
+}
+
+.mobile-nav-bottom a {
+    text-decoration: none;
 }
 
 /* Remove the body::after since we're using the mobile-nav::before */

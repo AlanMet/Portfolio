@@ -1,11 +1,17 @@
 const defaultLanguage = "en";
 const languagePath = "/languages/";
-const languageSelector = document.querySelector("#lang-select");
+const languageSelectors = document.querySelectorAll("#lang-select, #mobile-lang-select");
 
 function setLanguage(lang) {
     localStorage.setItem("lang", lang);
     configurePageLanguage(lang);
     loadAndApplyTranslations(lang);
+    // Update both selectors
+    languageSelectors.forEach(selector => {
+        if (selector.value !== lang) {
+            selector.value = lang;
+        }
+    });
 }
 
 function handleTranslationError(error) {
@@ -77,23 +83,32 @@ function getInitialLanguage(){
     return getSavedLanguage() || getBrowserLanguage();
 }
 
-function changeLanguage(){
-    setLanguage(languageSelector.value);
+function changeLanguage(event) {
+    setLanguage(event.target.value);
 }
 
 async function loaded() {
-  // First, check if the project initializer function exists
-  if (typeof initializeProjects === 'function') {
-    // If it exists, wait for it to finish loading and rendering the projects
-    await initializeProjects();
-  }
-  
-  // NOW, with the projects loaded, proceed with translation
-  const lang = getInitialLanguage();
-  languageSelector.value = lang;
-  configurePageLanguage(lang);
-  loadAndApplyTranslations(lang);
+    // First, check if the project initializer function exists
+    if (typeof initializeProjects === 'function') {
+        // If it exists, wait for it to finish loading and rendering the projects
+        await initializeProjects();
+    }
+    
+    // NOW, with the projects loaded, proceed with translation
+    const lang = getInitialLanguage();
+    
+    // Set initial value for all selectors
+    languageSelectors.forEach(selector => {
+        selector.value = lang;
+    });
+    
+    configurePageLanguage(lang);
+    loadAndApplyTranslations(lang);
 }
 
 document.addEventListener("DOMContentLoaded", loaded);
-languageSelector.addEventListener("change", changeLanguage);
+
+// Add change event listeners to all language selectors
+languageSelectors.forEach(selector => {
+    selector.addEventListener("change", changeLanguage);
+});
