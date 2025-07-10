@@ -52,31 +52,37 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 /* ==== RTL FIXES ==== */
 html[dir="rtl"] { direction: rtl; }
 html[dir="rtl"] .left-nav .name { margin-right: 0; margin-left: 30px; }
 html[dir="rtl"] .left-nav a, html[dir="rtl"] .right-nav a { margin-left: 0; margin-right: 20px; }
-html[dir="rtl"] nav a i { margin-left: 0; margin-right: 20px; }
+html[dir="rtl"] nav a i, html[dir="rtl"] nav a span { margin-left: 0; margin-right: 20px; }
 html[dir="rtl"] .hero-top { justify-content: flex-end; }
-html[dir="rtl"] .hero-top h1 { 
-    text-align: right; 
+html[dir="rtl"] .hero-top h1 {
+    text-align: right;
     margin-left: 0;
     margin-right: 10px;
     padding-right: 15px;
 }
-html[dir="rtl"] .grid-column { 
-    padding-right: 0; 
-    padding-left: 2rem; 
+html[dir="rtl"] .grid-column {
+    padding-right: 0;
+    padding-left: 2rem;
 }
-html[dir="rtl"] .grid-column:last-child { 
-    padding-left: 0; 
+html[dir="rtl"] .grid-column:last-child {
+    padding-left: 0;
 }
 html[dir="rtl"] .mobile-nav-bottom {
     flex-direction: row-reverse;
 }
-html[dir="rtl"] .lang-switcher i {
+html[dir="rtl"] .lang-switcher i,
+html[dir="rtl"] .lang-switcher span {
     right: auto;
     left: 4px;
 }
@@ -139,10 +145,11 @@ nav {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 36px;
-    margin-right: 30px;
-    color: var(--text-color) !important;
+    color: var(--text-color);
     text-decoration: none;
-    margin-left: 0;
+    margin: 0 30px 0 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .left-nav a,
@@ -155,27 +162,16 @@ nav {
     transition: color 0.4s ease;
 }
 
-/* Remove all other .name related styles and consolidate them here */
-.left-nav a.name {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--text-color);
-    text-decoration: none;
-    margin: 0 30px 0 0;
-    padding: 0;
-    display: inline-block;
-}
-
 .left-nav a:not(.name) {
     margin-left: 20px;
 }
 
-nav a i {
+nav a i, nav a span[class^="ri-"] {
     font-size: 30px;
     color: var(--link-color);
     margin-left: 20px;
     transition: color 0.4s ease;
+    vertical-align: middle;
 }
 
 .hero-container {
@@ -207,8 +203,8 @@ nav a i {
     line-height: 1.1;
     white-space: nowrap;
     text-align: left;
-    margin-left: 10px; /* Changed from -15px to add a small gap */
-    padding-left: 15px; /* Additional padding to ensure consistent spacing */
+    margin-left: 10px;
+    padding-left: 15px;
 }
 
 .hero-bottom {
@@ -228,12 +224,12 @@ nav a i {
 .about-lead { font-size: 1.5rem; line-height: 1.4; margin-bottom: 1rem; }
 .about-details { display: flex; flex-direction: column; gap: 1.5rem; line-height: 1.6; }
 .about-grid { display: flex; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.grid-column { 
-    padding-right: 2rem; 
+.grid-column {
+    padding-right: 2rem;
     border: none;
 }
-.grid-column:last-child { 
-    padding-right: 0; 
+.grid-column:last-child {
+    padding-right: 0;
 }
 .grid-column h3 { font-weight: 500; margin-bottom: 1.5rem; font-size: 1.1rem; }
 .grid-column ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem; }
@@ -269,8 +265,13 @@ html[dir="rtl"] .lang-switcher { margin-left: 0; margin-right: 20px; }
 .lang-switcher select { appearance: none; -webkit-appearance: none; -moz-appearance: none; background: transparent; border: none; font: inherit; font-weight: 500; cursor: pointer; padding: 4px 24px 4px 4px; color: var(--link-color); }
 html[dir="rtl"] .lang-switcher select { padding: 4px 4px 4px 24px; }
 
-.lang-switcher i { position: absolute; right: 4px; pointer-events: none; font-size: 1.2rem; color: #666; }
-html[dir="rtl"] .lang-switcher i { right: auto; left: 4px; }
+.lang-switcher i, .lang-switcher span[class^="ri-"] {
+    position: absolute;
+    right: 4px;
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: #666;
+}
 @keyframes spin-and-fade { from { transform: rotate(0deg); opacity: 1; } to { transform: rotate(360deg); opacity: 0; } }
 .icon-animating { animation: spin-and-fade 0.4s ease-in-out; }
 
@@ -291,14 +292,12 @@ html[dir="rtl"] .lang-switcher i { right: auto; left: 4px; }
     align-items: center;
 }
 
-/* Container for the three lines */
 .hamburger {
     width: 2em;
-    height: 18px; /* Height of the icon area */
+    height: 18px;
     position: relative;
 }
 
-/* Shared style for each line */
 .hamburger__line {
     position: absolute;
     left: 0;
@@ -308,19 +307,17 @@ html[dir="rtl"] .lang-switcher i { right: auto; left: 4px; }
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Position each line within the container */
 .hamburger__line--1 { top: 0; }
 .hamburger__line--2 { top: 50%; transform: translateY(-50%); }
 .hamburger__line--3 { bottom: 0; }
 
-/* Mobile nav backdrop */
 .nav-backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--bg-color);
+    background-color: rgba(0,0,0,0.5);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -332,104 +329,91 @@ body.nav-open .nav-backdrop {
     visibility: visible;
 }
 
-/* Styles for the mobile nav panel itself */
+/* === MOBILE NAV CONTAINER (START) === */
+
 .mobile-nav {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1000;
     transform: translateX(100%);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between; /* Pushes top and bottom apart */
     align-items: center;
-    padding: 4rem 0;
-    overflow-y: auto;
+    padding: 4rem 20px 2rem;
     background-color: var(--bg-color);
-    isolation: isolate;
+    overflow-y: auto;
 }
 
-.mobile-nav-top { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+.mobile-nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
     gap: 2rem;
     width: 100%;
-    position: relative;
-    z-index: 1;
 }
 
-.mobile-nav-top a { 
-    font-size: 2rem; 
+.mobile-nav-top a {
+    font-size: 2rem;
     font-weight: bold;
-    width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 3rem 0;
     color: var(--text-color);
     text-decoration: none;
 }
 
-.mobile-nav-bottom { 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.mobile-nav-bottom {
     width: 100%;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-    opacity: 0;
-    transform: translateY(20px);
+    flex-direction: row; /* Lay out icons horizontally */
+    justify-content: space-around; /* Space them out evenly */
+    align-items: center;
+    padding: 20px 0;
 }
 
-html[dir="rtl"] .mobile-nav-bottom { 
-    text-align: right;
+/* NEW: Specific rule for mobile icons to override generic styles */
+.mobile-nav-bottom a i,
+.mobile-nav-bottom a span[class^="ri-"] {
+    font-size: 28px;
+    color: var(--text-color);
+    margin: 0; /* CRITICAL: Resets desktop margin for proper flex spacing */
 }
 
-.mobile-nav-bottom .lang-switcher {
-    justify-content: flex-start;
-    margin-left: 0;
-}
+/* --- MOBILE NAV ANIMATIONS --- */
 
-html[dir="rtl"] .mobile-nav-bottom .lang-switcher {
-    justify-content: flex-end;
-}
-
-body.nav-open::after {
-    display: none;
-}
-
-/* Animation for mobile nav elements */
 .nav-open .mobile-nav {
     transform: translateX(0);
 }
 
+/* Set the initial "hidden" state for animating elements */
 .mobile-nav-top a,
-.mobile-nav-bottom a,
-.mobile-nav-bottom .lang-switcher {
+.mobile-nav-bottom {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* Set the final "visible" state when nav is open */
 .nav-open .mobile-nav-top a,
-.nav-open .mobile-nav-bottom a,
-.nav-open .mobile-nav-bottom .lang-switcher {
+.nav-open .mobile-nav-bottom {
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Stagger the animation of nav items */
-.mobile-nav-top a:nth-child(1) { transition-delay: 0.1s; }
-.mobile-nav-top a:nth-child(2) { transition-delay: 0.2s; }
-.mobile-nav-top a:nth-child(3) { transition-delay: 0.3s; }
-.mobile-nav-bottom a:nth-child(1) { transition-delay: 0.4s; }
-.mobile-nav-bottom a:nth-child(2) { transition-delay: 0.5s; }
-.mobile-nav-bottom .lang-switcher { transition-delay: 0.6s; }
+.nav-open .mobile-nav-top a:nth-child(1) { transition-delay: 0.1s; }
+.nav-open .mobile-nav-top a:nth-child(2) { transition-delay: 0.2s; }
+.nav-open .mobile-nav-top a:nth-child(3) { transition-delay: 0.3s; }
+.nav-open .mobile-nav-bottom { transition-delay: 0.4s; } /* The entire bottom bar fades in */
+
+
+/* === MOBILE NAV CONTAINER (END) === */
+
 
 /* --- Responsive Media Queries --- */
 @media (max-width: 768px) {
@@ -440,6 +424,14 @@ body.nav-open::after {
     .grid-column:last-child { padding-bottom: 0; }
     .projects-main-title { font-size: 2.5rem; }
     .projects-grid { grid-template-columns: 1fr; }
+}.mobile-nav-top a {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 @media (max-width: 675px) {
@@ -448,6 +440,6 @@ body.nav-open::after {
         display: none;
     }
     .nav-toggle {
-        display: flex; /* Use flex to enable centering */
+        display: flex;
     }
 }
