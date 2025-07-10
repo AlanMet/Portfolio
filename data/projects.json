@@ -1,62 +1,199 @@
 [
   {
-    "titleKey": "proj-study-buddy-title",
-    "descKey": "proj-study-buddy-desc",
-    "tags": ["Leadership", "Flutter", "Firebase"],
-    "link": "https://github.com/AlanMet/StudyBuddyFinder"
+    "title": "Study Buddy Finder",
+    "media": {
+      "images": [
+        "/images/study-buddy/01_dashboard.jpg",
+        "/images/study-buddy/02_profile.jpg",
+        "/images/study-buddy/03_chat.jpg"
+      ],
+      "video": null
+    },
+    "tags": [
+      "Leadership",
+      "Flutter",
+      "Firebase",
+      "Mobile App"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/StudyBuddyFinder",
+      "demo": null
+    },
+    "summary": "A mobile application built with Flutter to help students connect with suitable study partners based on their courses, study habits, and location.",
+    "detailed_description": "As the project lead, I managed a team of three to develop Study Buddy Finder from concept to deployment. The app leverages Firebase for real-time database, authentication, and cloud messaging to create a seamless user experience. Key features include a detailed user profile, a course matching algorithm, and an integrated chat system. This project honed my skills in team leadership, mobile architecture, and NoSQL database management."
   },
   {
-    "titleKey": "proj-dart-ml-title",
-    "descKey": "proj-dart-ml-desc",
-    "tags": ["Machine Learning", "Dart", "Linear Algebra"],
-    "link": "https://github.com/AlanMet/DartML"
+    "title": "DartML: A Foundational Machine Learning Library",
+    "media": {
+      "images": [],
+      "video": null
+    },
+    "tags": [
+      "Machine Learning",
+      "Dart",
+      "Linear Algebra"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/DartML",
+      "demo": null
+    },
+    "summary": "A pure Dart library for foundational machine learning algorithms, including various regression models, classifiers, and vector math utilities.",
+    "detailed_description": "DartML was created to provide a lightweight, dependency-free machine learning toolkit for the Dart ecosystem. It includes from-scratch implementations of Linear Regression, Logistic Regression, and K-Nearest Neighbors. The core of the library is a robust set of linear algebra classes for matrix and vector operations, optimized for performance in a single-threaded environment. This project was a deep dive into the mathematical principles behind core ML models."
   },
   {
-    "titleKey": "proj-fl-research-title",
-    "descKey": "proj-fl-research-desc",
-    "tags": ["Research", "Cybersecurity", "Python"],
-    "link": "https://github.com/AlanMet/FL-Research"
+    "title": "Decentralized Learning for IoT Security",
+    "media": {
+      "images": [
+        "/images/fl-research/01_architecture.jpg"
+      ],
+      "video": "/videos/fl-research/federated-learning-demo.mp4"
+    },
+    "tags": [
+      "Research",
+      "Cybersecurity",
+      "Python",
+      "Federated Learning"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/FL-Research",
+      "demo": "/papers/fl_research_paper.pdf"
+    },
+    "summary": "Academic research into the application of Federated Learning (FL) to detect anomalies in IoT network traffic without compromising user data privacy.",
+    "detailed_description": "This research explores a novel framework for training a shared anomaly detection model across a distributed network of IoT devices. By using Federated Learning, the model learns from local data on each device, sending only encrypted model updates to a central server. This maintains data privacy, a critical concern in consumer IoT. The project involved simulating network environments in Python, implementing the FL aggregation algorithm, and evaluating the model's performance against centralized training methods. The findings were published and are linked above."
   },
   {
-    "titleKey": "proj-race-timer-title",
-    "descKey": "proj-race-timer-desc",
-    "tags": ["WebSockets", "JavaScript", "UX Design"],
-    "link": "https://github.com/AlanMet/RaceTimer"
+    "title": "Real-time Race Timer",
+    "media": {
+      "images": [
+        "/images/race-timer/01_admin_view.jpg",
+        "/images/race-timer/02_public_view.jpg"
+      ],
+      "video": null
+    },
+    "tags": [
+      "WebSockets",
+      "JavaScript",
+      "UX Design"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/RaceTimer",
+      "demo": "https://racetimer.example.com"
+    },
+    "summary": "A live race timing application for local running events, featuring a public leaderboard that updates in real-time via WebSockets.",
+    "detailed_description": "Built to solve the problem of delayed and static race results at small-scale sporting events. The Race Timer has two interfaces: an admin panel for race officials to input bib numbers and finish times, and a public-facing leaderboard that anyone can view on their phone. The front-end is built with vanilla JavaScript, focusing on a clean UX, while a lightweight Node.js server manages the WebSocket connections to push live updates to all connected clients instantly."
   },
   {
-    "titleKey": "proj-token-lib-title",
-    "descKey": "proj-token-lib-desc",
-    "tags": ["Dart", "NLP"],
-    "link": "https://github.com/AlanMet/DartTokenizer"
+    "title": "DartTokenizer: A Simple Text Tokenizer",
+    "media": {
+      "images": [],
+      "video": null
+    },
+    "tags": [
+      "Dart",
+      "NLP",
+      "Utility"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/DartTokenizer",
+      "demo": null
+    },
+    "summary": "A lightweight and efficient text tokenization library for Dart, designed for simple Natural Language Processing tasks. It supports multiple tokenization strategies, including word, sentence, and whitespace.",
+    "detailed_description": null
   },
   {
-    "titleKey": "proj-shakespeare-title",
-    "descKey": "proj-shakespeare-desc",
-    "tags": ["NLP", "Python"],
-    "link": "https://github.com/AlanMet/ShakespeareGenerator"
+    "title": "Shakespearean Sonnet Generator",
+    "media": {
+      "images": [
+        "/images/shakespeare-gen/sample_output.jpg"
+      ],
+      "video": null
+    },
+    "tags": [
+      "NLP",
+      "Python",
+      "Markov Chains"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/ShakespeareGenerator",
+      "demo": null
+    },
+    "summary": "A fun Python script that uses Markov chains to generate new sonnets in the style of William Shakespeare after being trained on his complete works.",
+    "detailed_description": null
   },
   {
-    "titleKey": "proj-cmd-parser-title",
-    "descKey": "proj-cmd-parser-desc",
-    "tags": ["C#", "Dart", "Flutter"],
-    "link": "https://github.com/AlanMet/CommandParser"
+    "title": "Cross-Platform Command Parser",
+    "media": {
+      "images": [],
+      "video": null
+    },
+    "tags": [
+      "C#",
+      "Dart",
+      "Flutter",
+      "Utility"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/CommandParser",
+      "demo": null
+    },
+    "summary": "A flexible command-line argument parsing library implemented in both C# and Dart for building consistent command-line tools across different ecosystems.",
+    "detailed_description": null
   },
   {
-    "titleKey": "proj-rl-ttt-title",
-    "descKey": "proj-rl-ttt-desc",
-    "tags": ["Reinforcement Learning", "Python"],
-    "link": "https://github.com/AlanMet/RL-TicTacToe"
+    "title": "AI Tic-Tac-Toe Agent",
+    "media": {
+      "images": [],
+      "video": "/videos/rl-ttt/training_demo.mp4"
+    },
+    "tags": [
+      "Reinforcement Learning",
+      "AI",
+      "Python"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/RL-TicTacToe",
+      "demo": null
+    },
+    "summary": "An unbeatable Tic-Tac-Toe agent built with Python. The agent was trained using Q-learning, a model-free reinforcement learning algorithm, by playing against itself millions of times.",
+    "detailed_description": "This project was an introduction to the core concepts of reinforcement learning. I implemented the Q-learning algorithm from scratch to map state-action pairs to Q-values. The agent explores the game space to learn the optimal policy, eventually converging to a perfect player. The accompanying video shows the agent's win-rate improving over the course of its training."
   },
   {
-    "titleKey": "proj-smart-home-title",
-    "descKey": "proj-smart-home-desc",
-    "tags": ["Python", "Tkinter"],
-    "link": "https://github.com/AlanMet/SmartHomeApp"
+    "title": "Smart Home Control Panel",
+    "media": {
+      "images": [
+        "/images/smart-home/ui_main.jpg",
+        "/images/smart-home/ui_lights.jpg"
+      ],
+      "video": null
+    },
+    "tags": [
+      "Python",
+      "Tkinter",
+      "UI"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/SmartHomeApp",
+      "demo": null
+    },
+    "summary": "A simple desktop GUI application for a smart home dashboard, built using Python and the native Tkinter library. Allows for toggling lights and viewing device statuses.",
+    "detailed_description": null
   },
   {
-    "titleKey": "proj-patchwork-title",
-    "descKey": "proj-patchwork-desc",
-    "tags": ["Tkinter"],
-    "link": "https://github.com/AlanMet/PatchworkApp"
+    "title": "Patchwork Quilt Designer",
+    "media": {
+      "images": [],
+      "video": null
+    },
+    "tags": [
+      "Tkinter",
+      "Python",
+      "Hobby"
+    ],
+    "links": {
+      "github": "https://github.com/AlanMet/PatchworkApp",
+      "demo": null
+    },
+    "summary": "A small hobby application built with Tkinter to help design and visualize patchwork quilt patterns. Users can choose colors and arrangements to preview a final design before sewing.",
+    "detailed_description": null
   }
 ]

@@ -1,3 +1,4 @@
+//language.js
 const defaultLanguage = "en";
 const languagePath = "/languages/";
 const languageSelectors = document.querySelectorAll("#lang-select, #mobile-lang-select");
@@ -88,14 +89,19 @@ function changeLanguage(event) {
 }
 
 async function loaded() {
-    // First, check if the project initializer function exists
+    const lang = getInitialLanguage();
+    setLanguageAttributes(lang);
+    
+    // Load translations first
+    const translations = await fetchTranslationData(lang);
+    
+    // If we're on the projects page, wait for projects to load
     if (typeof initializeProjects === 'function') {
-        // If it exists, wait for it to finish loading and rendering the projects
         await initializeProjects();
     }
     
-    // NOW, with the projects loaded, proceed with translation
-    const lang = getInitialLanguage();
+    // Apply translations
+    applyTranslations(translations);
     
     // Set initial value for all selectors
     languageSelectors.forEach(selector => {

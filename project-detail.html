@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Details | Alan</title>
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-backdrop"></div>
+            <div class="left-nav">
+                <a href="index" class="name">Alan</a>
+                <a href="index" data-i18n="home-header">Home</a>
+                <a href="about" data-i18n="about-header">About</a>
+                <a href="projects" data-i18n="projects-header">Projects</a>
+            </div>
+            <div class="right-nav">
+                <div class="lang-switcher">
+                    <select id="lang-select" aria-label="Select language">
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="ar">AR</option>
+                    </select>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
+                    <i class="ri-article-line"></i>
+                </a>
+                <a id="theme-toggle"><i class="ri-sun-line"></i></a>
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <div class="hamburger">
+                    <div class="hamburger__line hamburger__line--1"></div>
+                    <div class="hamburger__line hamburger__line--2"></div>
+                    <div class="hamburger__line hamburger__line--3"></div>
+                </div>
+            </button>
+            
+            <div class="mobile-nav">
+                <div class="mobile-nav-top">
+                    <a href="index" data-i18n="home-header">Home</a>
+                    <a href="about" data-i18n="about-header">About</a>
+                    <a href="projects" data-i18n="projects-header">Projects</a>
+                </div>
+                <div class="mobile-nav-bottom">
+                    <div class="lang-switcher">
+                        <select id="mobile-lang-select" aria-label="Select language">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="ar">AR</option>
+                        </select>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
+                        <i class="ri-article-line"></i>
+                    </a>
+                    <a id="mobile-theme-toggle"><i class="ri-sun-line"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="hero-container">
+            <section class="hero-top">
+                <h1 data-i18n="hero-title">Full Stack Developer</h1>
+            </section>
+            <section class="hero-bottom">
+                <div class="about-left">
+                    <h2 class="about-title" data-i18n="about-header">About Me</h2> 
+                    <p class="about-text" data-i18n="hero-description">
+                        I’m a passionate full-stack developer focused on creating high-quality projects in various languages. 
+                        I specialize in many fields such as app development. 
+                        My expertise encompasses both front-end and back-end development, including areas like artificial intelligence. 
+                        I aim to create seamless digital experiences while adhering to best practices.
+                    </p>
+                    <a href="about" class="read-more" data-i18n="read-more">Read more →</a>
+                </div>
+                <div class="about-right"></div>
+            </section>
+        </main>
+
+        <svg width="0" height="0" style="position:absolute">
+            <filter id="grainy">
+                <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" result="noise"/>
+                <feColorMatrix type="saturate" values="0"/>
+                <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+            </filter>
+        </svg>
+
+        <script>
+            // This script runs instantly to prevent a theme flash.
+            (function() {
+                function getInitialTheme() {
+                    const savedTheme = localStorage.getItem('theme');
+                    if (savedTheme) {
+                        return savedTheme;
+                    }
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    return prefersDark ? 'dark' : 'light';
+                }
+                document.documentElement.setAttribute('data-theme', getInitialTheme());
+            })();
+        </script>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles/style.css">
+
+        <script src="scripts/colorManager.js" type="module"></script>
+        <script src="scripts/language.js" type="module"></script>
+        <script src="scripts/details.js" type="module"></script>
+        <script src="scripts/mobile-nav.js" type="module"></script>
+        <script src="scripts/theme.js" type="module"></script>
+    </body>
+</html>
