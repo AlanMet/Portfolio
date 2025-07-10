@@ -31,7 +31,6 @@ html[data-theme="light"] body::before{
     opacity: 0.5;
     mix-blend-mode: multiply;
     transition: opacity 0.3s ease-in-out;
-    will-change: opacity;
 }
 
 html[data-theme="dark"] body::before{
@@ -46,7 +45,6 @@ html[data-theme="dark"] body::before{
     filter: url(#grainy);
     opacity: 0.2;
     transition: opacity 0.3s ease-in-out;
-    will-change: opacity;
 }
 
 html,
