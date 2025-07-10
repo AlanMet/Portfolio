@@ -31,6 +31,7 @@ html[data-theme="light"] body::before{
     opacity: 0.5;
     mix-blend-mode: multiply;
     transition: opacity 0.3s ease-in-out;
+    transform: translateZ(0);
 }
 
 html[data-theme="dark"] body::before{
@@ -45,6 +46,7 @@ html[data-theme="dark"] body::before{
     filter: url(#grainy);
     opacity: 0.2;
     transition: opacity 0.3s ease-in-out;
+    transform: translateZ(0);
 }
 
 html,
@@ -53,6 +55,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--bg-color); /* Add this line */
 }
 
 *, *::before, *::after {
@@ -382,6 +385,10 @@ body.nav-open .nav-backdrop {
     font-size: 28px;
     color: var(--text-color);
     margin: 0; /* CRITICAL: Resets desktop margin for proper flex spacing */
+}
+
+a.github-icon, a.cv-icon {
+    text-decoration: none;
 }
 
 /* --- MOBILE NAV ANIMATIONS --- */
