@@ -26,31 +26,58 @@ function mixColors(colorArray) {
  * This function now accepts the project data as an argument.
  */
 function renderProjects(projectsData) {
+  // Get language from <html lang="..."> or default to 'en'
+  var lang = document.documentElement.lang || 'en';
   const grid = document.querySelector('.projects-grid');
   if (!grid) return;
   grid.innerHTML = '';
 
   for (const project of projectsData) {
-    const tagsHtml = project.tags.map(tag => {
-      const color = tagColors[tag] || tagColors.default;
-      return `<span style="background-color: ${color};">${tag}</span>`;
-    }).join('');
+    let tagsHtml = '';
+    let mixedBorderColor = tagColors && tagColors.default ? tagColors.default : '#eee';
+    if (project.tags) {
+      tagsHtml = project.tags.map(tag => {
+        const color = tagColors && tagColors[tag] ? tagColors[tag] : (tagColors && tagColors.default ? tagColors.default : '#eee');
+        return `<span style="background-color: ${color};">${tag}</span>`;
+      }).join('');
+      if (typeof mixColors === 'function') {
+        const tagColorValues = project.tags.map(tag => tagColors && tagColors[tag] ? tagColors[tag] : (tagColors && tagColors.default ? tagColors.default : '#eee'));
+        mixedBorderColor = mixColors(tagColorValues);
+      }
+    }
 
-    const tagColorValues = project.tags.map(tag => tagColors[tag] || tagColors.default);
-    const mixedBorderColor = mixColors(tagColorValues);
-
-    const projectCardHtml = `
-      <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
-        <article class="project-card" style="border-left-color: ${mixedBorderColor};">
-          <h3 data-i18n="${project.titleKey}"></h3>
-          <p data-i18n="${project.descKey}"></p>
-          <div class="project-tags">
-            ${tagsHtml}
-          </div>
-        </article>
-      </a>
-    `;
-    grid.insertAdjacentHTML('beforeend', projectCardHtml);
+    // New format: has id, title, summary, description
+    if (project.id && project.title && project.title[lang]) {
+      const hasDetail = project.description && project.description[lang];
+      const url = hasDetail ? `project-detail.html?id=${project.id}` : project.github;
+      const projectCardHtml = `
+        <a href="${url}" target="${hasDetail ? '_self' : '_blank'}" rel="noopener noreferrer" class="project-link">
+          <article class="project-card" style="border-left-color: ${mixedBorderColor};">
+            <h3>${project.title[lang]}</h3>
+            ${project.summary && project.summary[lang] ? `<p>${project.summary[lang]}</p>` : ''}
+            ${project.images && project.images.length ? `<img src="${project.images[0]}" alt="" style="max-width:100%;margin-bottom:1rem;">` : ''}
+            <div class="project-tags">
+              ${tagsHtml}
+            </div>
+          </article>
+        </a>
+      `;
+      grid.insertAdjacentHTML('beforeend', projectCardHtml);
+    } else {
+      // Old format: titleKey, descKey, link
+      const projectCardHtml = `
+        <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
+          <article class="project-card" style="border-left-color: ${mixedBorderColor};">
+            <h3 data-i18n="${project.titleKey}"></h3>
+            <p data-i18n="${project.descKey}"></p>
+            <div class="project-tags">
+              ${tagsHtml}
+            </div>
+          </article>
+        </a>
+      `;
+      grid.insertAdjacentHTML('beforeend', projectCardHtml);
+    }
   }
 }
 

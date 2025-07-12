@@ -1,21 +1,69 @@
 [
   {
-    "titleKey": "proj-study-buddy-title",
-    "descKey": "proj-study-buddy-desc",
+    "id": "proj-study-buddy",
+    "title": {
+      "en": "Study Buddy App",
+      "fr": "Application Study Buddy",
+      "ar": "تطبيق Study Buddy"
+    },
+    "summary": {
+      "en": "ML-powered student collaboration platform.",
+      "fr": "Plateforme de collaboration étudiante basée sur le ML.",
+      "ar": "منصة تعاون طلابية مدعومة بالذكاء الاصطناعي."
+    },
+    "description": {
+      "en": "Led a team of 6 developers to build a matching system for students using machine learning.",
+      "fr": "Dirigé une équipe de 6 développeurs pour créer un système de mise en relation ML pour la collaboration étudiante.",
+      "ar": "قاد فريقًا من 6 مطورين لبناء نظام مطابقة للطلاب باستخدام التعلم الآلي."
+    },
+    "images": ["images/projects/studybuddy1.png"],
     "tags": ["Leadership", "Flutter", "Firebase"],
-    "link": "https://github.com/AlanMet/StudyBuddyFinder"
+    "github": "https://github.com/AlanMet/StudyBuddyFinder",
+    "demo": null
   },
   {
-    "titleKey": "proj-dart-ml-title",
-    "descKey": "proj-dart-ml-desc",
+    "id": "proj-dart-ml",
+    "title": {
+      "en": "Dart ML Stack",
+      "fr": "Stack ML en Dart",
+      "ar": "حزمة ML في دارت"
+    },
+    "summary": {
+      "en": "Matrix library & neural net with autodiff in Dart.",
+      "fr": "Bibliothèque matricielle & réseau neuronal avec auto‑diff en Dart.",
+      "ar": "مكتبة مصفوفات وشبكة عصبية مع تفاضل تلقائي في دارت."
+    },
+    "description": {
+      "en": "Implements a neural network and matrix operations in Dart.",
+      "fr": "Implémente un réseau neuronal et des opérations matricielles en Dart.",
+      "ar": "ينفذ شبكة عصبية وعمليات المصفوفات في دارت."
+    },
+    "images": ["images/projects/dartml1.png"],
     "tags": ["Machine Learning", "Dart", "Linear Algebra"],
-    "link": "https://github.com/AlanMet/DartML"
+    "github": "https://github.com/AlanMet/DartML",
+    "demo": null
   },
   {
-    "titleKey": "proj-fl-research-title",
-    "descKey": "proj-fl-research-desc",
+    "id": "proj-fl-research",
+    "title": {
+      "en": "FL Security Research",
+      "fr": "Recherche FL Sécurité",
+      "ar": "بحث أمان FL"
+    },
+    "summary": {
+      "en": "Defense mechanisms for federated learning.",
+      "fr": "Mécanismes de défense pour l'apprentissage fédéré.",
+      "ar": "آليات الدفاع للتعلم الفيدرالي."
+    },
+    "description": {
+      "en": "Co-authored a paper on poisoning attack defenses in federated learning.",
+      "fr": "Co‑auteur d'un article sur des mécanismes de défense contre les attaques par empoisonnement en apprentissage fédéré.",
+      "ar": "شارك في تأليف ورقة حول الدفاع ضد هجمات التسميم في التعلم الفيدرالي."
+    },
+    "images": ["images/projects/flresearch1.png"],
     "tags": ["Research", "Cybersecurity", "Python"],
-    "link": "https://github.com/AlanMet/FL-Research"
+    "github": "https://github.com/AlanMet/FL-Research",
+    "demo": null
   },
   {
     "titleKey": "proj-race-timer-title",
