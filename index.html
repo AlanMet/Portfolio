@@ -12,10 +12,10 @@
         <nav>
             <div class="nav-backdrop"></div>
             <div class="left-nav">
-                <a href="index" class="name">Alan</a>
-                <a href="index" data-i18n="home-header">Home</a>
-                <a href="about" data-i18n="about-header">About</a>
-                <a href="projects" data-i18n="projects-header">Projects</a>
+                <a href="./" class="name">Alan</a>
+                <a href="./" data-i18n="home-header">Home</a>
+                <a href="about.html" data-i18n="about-header" class="nav-link">About</a>
+                <a href="projects.html" data-i18n="projects-header" class="nav-link">Projects</a>
             </div>
             <div class="right-nav">
                 <div class="lang-switcher">
@@ -26,13 +26,12 @@
                     </select>
                     <i class="ri-arrow-down-s-line"></i>
                 </div>
-                <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
-                    <i class="ri-github-line"></i>
-                </a>
-                <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
-                    <i class="ri-article-line"></i>
-                </a>
-                <a id="theme-toggle"><i class="ri-sun-line"></i></a>
+                <!-- Desktop only: keep actions here -->
+                <div class="nav-actions-desktop">
+                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon"><i class="ri-github-line"></i></a>
+                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon"><i class="ri-article-line"></i></a>
+                    <a id="theme-toggle"><i class="ri-sun-line"></i></a>
+                </div>
             </div>
 
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -42,12 +41,21 @@
                     <div class="hamburger__line hamburger__line--3"></div>
                 </div>
             </button>
-            
-            <div class="mobile-nav">
+        </nav>
+        
+        <div class="mobile-nav">
+            <div class="mobile-nav-content">
+                <button class="nav-toggle nav-toggle-mobile" aria-label="toggle navigation">
+                    <div class="hamburger">
+                        <div class="hamburger__line hamburger__line--1"></div>
+                        <div class="hamburger__line hamburger__line--2"></div>
+                        <div class="hamburger__line hamburger__line--3"></div>
+                    </div>
+                </button>
                 <div class="mobile-nav-top">
-                    <a href="index" data-i18n="home-header">Home</a>
-                    <a href="about" data-i18n="about-header">About</a>
-                    <a href="projects" data-i18n="projects-header">Projects</a>
+                    <a href="./" data-i18n="home-header">Home</a>
+                    <a href="about.html" data-i18n="about-header" class="nav-link">About</a>
+                    <a href="projects.html" data-i18n="projects-header" class="nav-link">Projects</a>
                 </div>
                 <div class="mobile-nav-bottom">
                     <div class="lang-switcher">
@@ -58,16 +66,12 @@
                         </select>
                         <i class="ri-arrow-down-s-line"></i>
                     </div>
-                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
-                        <i class="ri-github-line"></i>
-                    </a>
-                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
-                        <i class="ri-article-line"></i>
-                    </a>
-                    <a id="mobile-theme-toggle"><i class="ri-sun-line"></i></a>
+                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon"><i class="ri-github-line"></i></a>
+                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon"><i class="ri-article-line"></i></a>
+                    <a id="mobile-theme-toggle" class="nav-action-icon"><i class="ri-sun-line"></i></a>
                 </div>
             </div>
-        </nav>
+        </div>
 
         <main class="hero-container">
             <section class="hero-top">
@@ -82,7 +86,7 @@
                         My expertise encompasses both front-end and back-end development, including areas like artificial intelligence. 
                         I aim to create seamless digital experiences while adhering to best practices.
                     </p>
-                    <a href="about" class="read-more" data-i18n="read-more">Read more →</a>
+                    <a href="about.html" class="nav-link" class="read-more" data-i18n="read-more">Read more →</a>
                 </div>
                 <div class="about-right"></div>
             </section>
@@ -117,5 +121,6 @@
         <script src="scripts/theme.js"></script>
         <script src="scripts/language.js"></script>
         <script src="scripts/mobile-nav.js"></script>
+        <script src="scripts/navigation.js"></script>
     </body>
 </html>

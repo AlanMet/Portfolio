@@ -12,10 +12,10 @@
         <nav>
             <div class="nav-backdrop"></div>
             <div class="left-nav">
-                <a href="index" class="name">Alan</a>
-                <a href="index" data-i18n="home-header">Home</a>
-                <a href="about" data-i18n="about-header">About</a>
-                <a href="projects" data-i18n="projects-header">Projects</a>
+                <a href="./" class="name">Alan</a>
+                <a href="./" data-i18n="home-header">Home</a>
+                <a href="about.html" data-i18n="about-header" class="nav-link">About</a>
+                <a href="projects.html" data-i18n="projects-header" class="nav-link">Projects</a>
             </div>
             <div class="right-nav">
                 <div class="lang-switcher">
@@ -26,15 +26,14 @@
                     </select>
                     <i class="ri-arrow-down-s-line"></i>
                 </div>
-                <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
+                <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer">
                     <i class="ri-github-line"></i>
                 </a>
-                <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
+                <a href="Alan.pdf" target="_blank" rel="noopener noreferrer">
                     <i class="ri-article-line"></i>
                 </a>
                 <a id="theme-toggle"><i class="ri-sun-line"></i></a>
             </div>
-
             <button class="nav-toggle" aria-label="toggle navigation">
                 <div class="hamburger">
                     <div class="hamburger__line hamburger__line--1"></div>
@@ -42,12 +41,21 @@
                     <div class="hamburger__line hamburger__line--3"></div>
                 </div>
             </button>
-            
-            <div class="mobile-nav">
+        </nav>
+        
+        <div class="mobile-nav">
+            <div class="mobile-nav-content">
+                <button class="nav-toggle nav-toggle-mobile" aria-label="toggle navigation">
+                    <div class="hamburger">
+                        <div class="hamburger__line hamburger__line--1"></div>
+                        <div class="hamburger__line hamburger__line--2"></div>
+                        <div class="hamburger__line hamburger__line--3"></div>
+                    </div>
+                </button>
                 <div class="mobile-nav-top">
-                    <a href="index" data-i18n="home-header">Home</a>
-                    <a href="about" data-i18n="about-header">About</a>
-                    <a href="projects" data-i18n="projects-header">Projects</a>
+                    <a href="./" data-i18n="home-header">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="about-header">About</a>
+                    <a href="projects.html" class="nav-link" data-i18n="projects-header">Projects</a>
                 </div>
                 <div class="mobile-nav-bottom">
                     <div class="lang-switcher">
@@ -67,7 +75,42 @@
                     <a id="mobile-theme-toggle"><i class="ri-sun-line"></i></a>
                 </div>
             </div>
+        </div>
         </nav>
+        
+        <div class="mobile-nav">
+            <div class="mobile-nav-content">
+                <button class="nav-toggle nav-toggle-mobile" aria-label="toggle navigation">
+                    <div class="hamburger">
+                        <div class="hamburger__line hamburger__line--1"></div>
+                        <div class="hamburger__line hamburger__line--2"></div>
+                        <div class="hamburger__line hamburger__line--3"></div>
+                    </div>
+                </button>
+                <div class="mobile-nav-top">
+                    <a href="./" data-i18n="home-header">Home</a>
+                    <a href="about.html" data-i18n="about-header" class="nav-link">About</a>
+                    <a href="projects.html" data-i18n="projects-header" class="nav-link">Projects</a>
+                </div>
+                <div class="mobile-nav-bottom">
+                    <div class="lang-switcher">
+                        <select id="mobile-lang-select" aria-label="Select language">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="ar">AR</option>
+                        </select>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <a href="https://github.com/AlanMet" target="_blank" rel="noopener noreferrer" class="github-icon">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="Alan.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon">
+                        <i class="ri-article-line"></i>
+                    </a>
+                    <a id="mobile-theme-toggle"><i class="ri-sun-line"></i></a>
+                </div>
+            </div>
+        </div>
 
   <main class="about-container">
     <section class="about-hero">

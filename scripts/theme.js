@@ -23,10 +23,18 @@ function toggleTheme() {
     
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
-
+    
+    // Remember if the nav was open
+    const wasNavOpen = document.body.classList.contains("nav-open");
+    
     // Set the new theme and save it
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
+    
+    // If nav was open, ensure it stays open
+    if (wasNavOpen) {
+        document.body.classList.add("nav-open");
+    }
     
     // Update the icons to reflect the new theme
     updateIcons();
