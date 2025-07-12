@@ -57,7 +57,7 @@
   "proj-token-lib-desc": "Bibliothèque de tokenisation de texte simple et efficace en Dart",
   "proj-token-lib-tag-1": "Dart",
   "proj-token-lib-tag-2": "NLP",
-  "proj-shakespeare-title": "Générateur de Texte Shakespeare",
+  "proj-shakespeare-title": "Générateur de Texte",
   "proj-shakespeare-desc": "Modèle encodeur‑décodeur entraîné sur des textes anglais du début de l’époque moderne avec attention",
   "proj-shakespeare-tag-1": "NLP",
   "proj-shakespeare-tag-2": "Python",
