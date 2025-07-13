@@ -1,8 +1,16 @@
+// Tag color map (copied from projects.js)
+const tagColors = {
+  "JavaScript": "#F7DF1E", "Python": "#3776AB", "Dart": "#0175C2", "C#": "#9B4F96",
+  "Flutter": "#02569B", "Tkinter": "#FFD580", "Machine Learning": "#F9872A", "NLP": "#4CAF50",
+  "Reinforcement Learning": "#E91E63", "WebSockets": "#2196F3", "Firebase": "#FFCA28",
+  "Leadership": "#607D8B", "Research": "#795548", "Cybersecurity": "#F44336",
+  "Linear Algebra": "#00BCD4", "UX Design": "#009688", "default": "#6c757d"
+};
+
 // scripts/project-detail.js
 // Dynamically loads project details based on ?id= in URL and language
 
 function getLang() {
-  // Try to get language from <html lang="..."> or default to 'en'
   return document.documentElement.lang || 'en';
 }
 
@@ -12,37 +20,75 @@ function getProjectId() {
 }
 
 function renderProjectDetail(projects) {
-  console.log('Rendering project detail for ID:', getProjectId());
   const id = getProjectId();
   const lang = getLang();
-  // fallback: if no project matches, try first project
   let proj = projects.find(p => p.id === id);
   if (!proj && projects.length) proj = projects[0];
-  const container = document.getElementById('project-detail');
-  if (!container) return;
-  if (!proj) {
-    container.innerHTML = '<h2>Project not found</h2>';
-    return;
+  if (!proj) return;
+  // Title
+  document.getElementById('project-title').textContent = proj.title?.[lang] || proj.title?.en || 'Untitled';
+  // Image
+  const imgEl = document.getElementById('project-image');
+  if (proj.images && proj.images.length) {
+    imgEl.src = proj.images[0];
+    imgEl.style.display = '';
+  } else {
+    imgEl.style.display = 'none';
   }
-  container.innerHTML = `
-    <h1>${proj.title?.[lang] || proj.title?.en || 'Untitled'}</h1>
-    ${proj.summary && proj.summary[lang] ? `<h3>${proj.summary[lang]}</h3>` : ''}
-    ${proj.images && proj.images.length ? proj.images.map(img => `<img src='${img}' alt='' style='max-width:100%;margin-bottom:1rem;'>`).join('') : ''}
-    ${proj.description && proj.description[lang] ? `<p>${proj.description[lang]}</p>` : ''}
-    <div class="project-tags">
-      ${proj.tags ? proj.tags.map(tag => `<span>${tag}</span>`).join('') : ''}
-    </div>
-    <div style="margin-top:2rem;">
-      ${proj.github ? `<a href='${proj.github}' target='_blank'>GitHub</a>` : ''}
-      ${proj.demo ? ` | <a href='${proj.demo}' target='_blank'>Live Demo</a>` : ''}
-    </div>
-  `;
+  // Tags (with color)
+  const tagsEl = document.getElementById('project-tags');
+  tagsEl.innerHTML = proj.tags ? proj.tags.map(tag => {
+    const color = tagColors && tagColors[tag] ? tagColors[tag] : (tagColors && tagColors.default ? tagColors.default : '#222');
+    return `<span style="background-color: ${color}; color: #fff;">${tag}</span>`;
+  }).join('') : '';
+  // Summary (with RTL/LTR border)
+  const summaryEl = document.getElementById('project-summary');
+  const summaryText = proj.summary && proj.summary[lang] ? proj.summary[lang] : '';
+  summaryEl.textContent = summaryText;
+  const dir = document.documentElement.getAttribute('dir') || (lang === 'ar' ? 'rtl' : 'ltr');
+  summaryEl.style.borderLeft = dir === 'rtl' ? 'none' : '3px solid var(--text-color)';
+  summaryEl.style.borderRight = dir === 'rtl' ? '3px solid var(--text-color)' : 'none';
+  summaryEl.style.paddingLeft = dir === 'rtl' ? '0' : '1rem';
+  summaryEl.style.paddingRight = dir === 'rtl' ? '1rem' : '0';
+  // Description
+  document.getElementById('project-description').innerHTML = proj.description && proj.description[lang] ? `<p>${proj.description[lang]}</p>` : '';
+  // Back button
+  const backBtn = document.getElementById('back-to-projects');
+  backBtn.textContent = lang === 'fr' ? '← Retour aux projets' : lang === 'ar' ? '← العودة للمشاريع' : '← Back to Projects';
+  // GitHub
+  const githubBtn = document.getElementById('project-github');
+  if (proj.github) {
+    githubBtn.href = proj.github;
+    githubBtn.style.display = '';
+  } else {
+    githubBtn.style.display = 'none';
+  }
+  // Demo
+  const demoBtn = document.getElementById('project-demo');
+  if (proj.demo) {
+    demoBtn.href = proj.demo;
+    demoBtn.style.display = '';
+  } else {
+    demoBtn.style.display = 'none';
+  }
 }
 
 function loadProjectDetail() {
   fetch('data/projects.json')
     .then(function(res) { return res.json(); })
-    .then(renderProjectDetail);
+    .then(function(projects) {
+      window._projectData = projects;
+      renderProjectDetail(projects);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', loadProjectDetail);
+
+// Listen for language change and re-render detail
+document.querySelectorAll('#lang-select, #mobile-lang-select').forEach(function(sel) {
+  sel.addEventListener('change', function() {
+    if (window._projectData) {
+      renderProjectDetail(window._projectData);
+    }
+  });
+});

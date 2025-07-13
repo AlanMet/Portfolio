@@ -55,7 +55,7 @@ function renderProjects(projectsData) {
           <article class="project-card" style="border-left-color: ${mixedBorderColor};">
             <h3>${project.title[lang]}</h3>
             ${project.summary && project.summary[lang] ? `<p>${project.summary[lang]}</p>` : ''}
-            ${project.images && project.images.length ? `<img src="${project.images[0]}" alt="" style="max-width:100%;margin-bottom:1rem;">` : ''}
+              ${''}
             <div class="project-tags">
               ${tagsHtml}
             </div>

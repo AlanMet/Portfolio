@@ -337,7 +337,11 @@ nav a i {
     border-radius: 15px;
     font-size: 0.85rem;
     white-space: nowrap;
-    color: var(--bg-color);
+    color: #fff;
+    background: #222;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+    display: inline-block;
     transition: transform 0.2s ease;
 }
 .project-tags span:hover {
@@ -605,5 +609,110 @@ body.nav-open::after {
         width: 44px;
         height: 44px;
         box-sizing: border-box;
+    }
+}
+
+/* ============================================= */
+/* === STYLES FOR NEW PROJECT DETAIL SECTION === */
+/* ============================================= */
+
+/* Main container for the new content */
+.project-detail-container {
+    max-width: 900px;
+    margin: 2rem auto; /* Centers the content and adds space top/bottom */
+    padding: 0 2rem;
+    flex: 1; /* Ensures it takes up available space */
+    z-index: 1;
+}
+
+/* Back button with left arrow and underline */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    text-decoration: underline;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-link i {
+    font-size: 1.2rem;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Project Image */
+.project-image {
+    width: 75%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-bottom: 1.5rem;
+    background-color: #ccc; /* Placeholder color */
+}
+
+/* Container for GitHub and Demo links */
+.project-links {
+    display: flex;
+    gap: 2rem; /* Space between the links */
+    margin-bottom: 2rem;
+}
+
+/* UPDATED: Styling for GitHub and Demo links for a continuous underline */
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none; /* Remove the default, broken underline */
+    /* border-bottom: 2px solid var(--text-color); Add a solid border that spans the full width */
+    padding-bottom: 3px; /* Adjusts the space between the text/icon and the underline */
+    font-size: 1.1rem;
+    /* font-weight: 500; */
+}
+
+/* This rule for the icon size remains the same */
+.project-links a i {
+    font-size: 1.4rem;
+}
+
+/* Short summary text */
+.project-summary {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--text-color); /* Adds a little emphasis */
+    padding-left: 1rem;
+}
+
+/* Long description section */
+.project-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.project-description p {
+    margin-bottom: 1rem;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2.2rem;
+    }
+
+    .project-detail-container {
+        padding: 0 1rem;
+        margin-top: 1rem;
     }
 }

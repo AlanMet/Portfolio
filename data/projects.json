@@ -16,7 +16,7 @@
       "fr": "Dirigé une équipe de 6 développeurs pour créer un système de mise en relation ML pour la collaboration étudiante.",
       "ar": "قاد فريقًا من 6 مطورين لبناء نظام مطابقة للطلاب باستخدام التعلم الآلي."
     },
-    "images": ["images/projects/studybuddy1.png"],
+    "images": ["images/preview.png", "images/preview.png"],
     "tags": ["Leadership", "Flutter", "Firebase"],
     "github": "https://github.com/AlanMet/StudyBuddyFinder",
     "demo": null
@@ -38,7 +38,7 @@
       "fr": "Implémente un réseau neuronal et des opérations matricielles en Dart.",
       "ar": "ينفذ شبكة عصبية وعمليات المصفوفات في دارت."
     },
-    "images": ["images/projects/dartml1.png"],
+    "images": ["images/preview.png"],
     "tags": ["Machine Learning", "Dart", "Linear Algebra"],
     "github": "https://github.com/AlanMet/DartML",
     "demo": null
@@ -60,7 +60,7 @@
       "fr": "Co‑auteur d'un article sur des mécanismes de défense contre les attaques par empoisonnement en apprentissage fédéré.",
       "ar": "شارك في تأليف ورقة حول الدفاع ضد هجمات التسميم في التعلم الفيدرالي."
     },
-    "images": ["images/projects/flresearch1.png"],
+    "images": ["images/preview.png"],
     "tags": ["Research", "Cybersecurity", "Python"],
     "github": "https://github.com/AlanMet/FL-Research",
     "demo": null
