@@ -328,7 +328,7 @@ nav a i {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto;
+    margin-top: 0;
     justify-content: flex-start;
     align-items: flex-end;
 }
