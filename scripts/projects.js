@@ -4,8 +4,14 @@ const tagColors = {
   "Flutter": "#02569B", "Tkinter": "#FFD580", "Machine Learning": "#F9872A", "NLP": "#4CAF50",
   "Reinforcement Learning": "#E91E63", "WebSockets": "#2196F3", "Firebase": "#FFCA28",
   "Leadership": "#607D8B", "Research": "#795548", "Cybersecurity": "#F44336",
-  "Linear Algebra": "#00BCD4", "UX Design": "#009688", "default": "#6c757d"
+  "Linear Algebra": "#00BCD4", "UX Design": "#009688", "From Scratch": "#8BC34A",
+  "Library": "#9C27B0", "Mobile": "#FF9800", "Game Development": "#E91E63",
+  ".NET": "#512BD4", "Engine": "#607D8B", "Numerical Computing": "#2196F3",
+  "Security": "#F44336", "Encryption": "#795548", "Node.js": "#339933",
+  "TypeScript": "#3178C6", "AI": "#FF6F00", "LLM": "#FF5722",
+  "Graphics": "#4CAF50", "JWT": "#000000", "default": "#6c757d"
 };
+
 
 // --- Color mixing helper functions (no changes here) ---
 function hexToRgb(hex) {

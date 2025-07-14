@@ -1,110 +1,222 @@
 [
   {
-    "id": "proj-study-buddy",
-    "title": {
-      "en": "Study Buddy App",
-      "fr": "Application Study Buddy",
-      "ar": "تطبيق Study Buddy"
-    },
-    "summary": {
-      "en": "ML-powered student collaboration platform.",
-      "fr": "Plateforme de collaboration étudiante basée sur le ML.",
-      "ar": "منصة تعاون طلابية مدعومة بالذكاء الاصطناعي."
-    },
-    "description": {
-      "en": "Led a team of 6 developers to build a matching system for students using machine learning.",
-      "fr": "Dirigé une équipe de 6 développeurs pour créer un système de mise en relation ML pour la collaboration étudiante.",
-      "ar": "قاد فريقًا من 6 مطورين لبناء نظام مطابقة للطلاب باستخدام التعلم الآلي."
-    },
-    "images": ["images/preview.png", "images/preview.png"],
-    "tags": ["Leadership", "Flutter", "Firebase"],
-    "github": "https://github.com/AlanMet/StudyBuddyFinder",
-    "demo": null
-  },
-  {
-    "id": "proj-dart-ml",
-    "title": {
-      "en": "Dart ML Stack",
-      "fr": "Stack ML en Dart",
-      "ar": "حزمة ML في دارت"
-    },
-    "summary": {
-      "en": "Matrix library & neural net with autodiff in Dart.",
-      "fr": "Bibliothèque matricielle & réseau neuronal avec auto‑diff en Dart.",
-      "ar": "مكتبة مصفوفات وشبكة عصبية مع تفاضل تلقائي في دارت."
-    },
-    "description": {
-      "en": "Implements a neural network and matrix operations in Dart.",
-      "fr": "Implémente un réseau neuronal et des opérations matricielles en Dart.",
-      "ar": "ينفذ شبكة عصبية وعمليات المصفوفات في دارت."
-    },
-    "images": ["images/preview.png"],
-    "tags": ["Machine Learning", "Dart", "Linear Algebra"],
-    "github": "https://github.com/AlanMet/DartML",
-    "demo": null
-  },
-  {
     "id": "proj-fl-research",
     "title": {
-      "en": "FL Security Research",
-      "fr": "Recherche FL Sécurité",
-      "ar": "بحث أمان FL"
+      "en": "Novel FL Attack & Defense",
+      "fr": "Nouvelles Attaques & Défenses FL",
+      "ar": "هجوم ودفاع FL مبتكر"
     },
     "summary": {
-      "en": "Defense mechanisms for federated learning.",
-      "fr": "Mécanismes de défense pour l'apprentissage fédéré.",
-      "ar": "آليات الدفاع للتعلم الفيدرالي."
+      "en": "Created new attack and defense mechanisms for federated learning.",
+      "fr": "Création de nouveaux mécanismes d'attaque et de défense pour l'apprentissage fédéré.",
+      "ar": "ابتكار آليات هجوم ودفاع جديدة للتعلم الفيدرالي."
     },
     "description": {
-      "en": "Co-authored a paper on poisoning attack defenses in federated learning.",
-      "fr": "Co‑auteur d'un article sur des mécanismes de défense contre les attaques par empoisonnement en apprentissage fédéré.",
-      "ar": "شارك في تأليف ورقة حول الدفاع ضد هجمات التسميم في التعلم الفيدرالي."
+      "en": "This research addresses critical security vulnerabilities in Federated Learning (FL), a machine learning paradigm where models are trained on decentralized data. While FL enhances privacy, it exposes the global model to unique threats like poisoning attacks, where malicious clients submit corrupt data to degrade model performance.\n\nMy contribution involved creating and formalizing novel attack methodologies to rigorously test system resilience, alongside developing new defense mechanisms to counteract these threats. This included designing algorithms capable of identifying and isolating malicious model updates submitted by attackers without compromising the integrity of updates from benign participants.\n\nThe attacks and defenses were implemented in Python and evaluated on common image classification tasks. The results demonstrate a significant improvement in model robustness against these advanced attacks and are being prepared for publication in the Journal of Information Security, contributing to the development of more trustworthy distributed AI systems.",
+      "fr": "Cette recherche aborde les vulnérabilités de sécurité critiques de l'Apprentissage Fédéré (FL), un paradigme d'apprentissage automatique où les modèles sont formés sur des données décentralisées. Bien que le FL améliore la confidentialité, il expose le modèle global à des menaces uniques comme les attaques par empoisonnement, où des clients malveillants soumettent des données corrompues pour dégrader les performances du modèle.\n\nMa contribution a consisté à créer et à formaliser de nouvelles méthodologies d'attaque pour tester rigoureusement la résilience du système, tout en développant de nouveaux mécanismes de défense pour contrer ces menaces. Cela comprenait la conception d'algorithmes capables d'identifier et d'isoler les mises à jour de modèles malveillantes soumises par les attaquants sans compromettre l'intégrité des mises à jour des participants bienveillants.\n\nLes attaques et les défenses ont été implémentées en Python et évaluées sur des tâches de classification d'images courantes. Les résultats démontrent une amélioration significative de la robustesse du modèle contre ces attaques avancées et sont en cours de préparation pour publication dans le Journal of Information Security, contribuant ainsi au développement de systèmes d'IA distribués plus fiables.",
+      "ar": "يتناول هذا البحث الثغرات الأمنية الحرجة في التعلم الفيدرالي (FL)، وهو نموذج تعلم آلي يتم فيه تدريب النماذج على بيانات لامركزية. بينما يعزز التعلم الفيدرالي الخصوصية، فإنه يعرض النموذج العالمي لتهديدات فريدة مثل هجمات التسميم، حيث يقدم العملاء الخبيثون بيانات فاسدة لتقليل أداء النموذج.\n\nتضمنت مساهمتي إنشاء وتأطير منهجيات هجوم مبتكرة لاختبار مرونة النظام بدقة، إلى جانب تطوير آليات دفاع جديدة لمواجهة هذه التهديدات. وشمل ذلك تصميم خوارزميات قادرة على تحديد وعزل تحديثات النموذج الخبيثة المقدمة من المهاجمين دون المساس بسلامة التحديثات من المشاركين الحميدين.\n\nتم تنفيذ الهجمات والدفاعات بلغة بايثون وتقييمها على مهام تصنيف الصور الشائعة. تظهر النتائج تحسنًا كبيرًا في متانة النموذج ضد هذه الهجمات المتقدمة ويجري إعدادها للنشر في مجلة أمن المعلومات، مما يساهم في تطوير أنظمة ذكاء اصطناعي موزعة أكثر جدارة بالثقة."
     },
-    "images": ["images/preview.png"],
-    "tags": ["Research", "Cybersecurity", "Python"],
+    "images": [],
+    "tags": ["Research", "Cybersecurity", "Python", "Machine Learning"],
     "github": "https://github.com/AlanMet/FL-Research",
     "demo": null
   },
   {
-    "titleKey": "proj-race-timer-title",
-    "descKey": "proj-race-timer-desc",
-    "tags": ["WebSockets", "JavaScript", "UX Design"],
-    "link": "https://github.com/AlanMet/RaceTimer"
+    "id": "proj-dart-nn",
+    "title": {
+      "en": "Neural Network from Scratch",
+      "fr": "Réseau Neuronal de Zéro",
+      "ar": "شبكة عصبية من الصفر"
+    },
+    "summary": {
+      "en": "A multi-layered neural network library built from scratch in Dart.",
+      "fr": "Une bibliothèque de réseau neuronal multicouche entièrement créée en Dart.",
+      "ar": "مكتبة شبكة عصبية متعددة الطبقات مبنية من الصفر في لغة دارت."
+    },
+    "description": {
+      "en": "The objective of this project was to build a comprehensive neural network library from the ground up entirely in Dart, without relying on any external machine learning frameworks. This endeavor was driven by a desire to deeply understand the core mechanics of machine learning, from the underlying data structures to the complexities of backpropagation.\n\nThe library features a flexible, multi-layered architecture that allows for the construction of deep neural networks. It supports multiple standard activation functions like ReLU, Sigmoid, and Softmax, and is designed with an extensible interface that allows developers to easily integrate their own custom activation functions. The entire library is built upon the custom Dart Matrix library, ensuring all underlying mathematical operations are efficient and optimized.\n\nThe API provides a simple interface for creating a network topology, training the model on datasets with specified learning rates and epochs, and making predictions on new data. All core logic, including the forward pass, loss calculation, and the backward pass for gradient descent, is implemented from scratch to provide a complete, self-contained machine learning tool in Dart.",
+      "fr": "L'objectif de ce projet était de construire une bibliothèque de réseau neuronal complète à partir de zéro, entièrement en Dart, sans dépendre d'aucun framework d'apprentissage automatique externe. Cette démarche était motivée par le désir de comprendre en profondeur les mécanismes de base de l'apprentissage automatique, des structures de données sous-jacentes aux complexités de la rétropropagation.\n\nLa bibliothèque dispose d'une architecture flexible et multicouche qui permet la construction de réseaux de neurones profonds. Elle prend en charge plusieurs fonctions d'activation standard comme ReLU, Sigmoid et Softmax, et est conçue avec une interface extensible qui permet aux développeurs d'intégrer facilement leurs propres fonctions d'activation personnalisées. L'ensemble de la bibliothèque est construit sur la bibliothèque matricielle personnalisée Dart, garantissant que toutes les opérations mathématiques sous-jacentes sont efficaces et optimisées.\n\nL'API fournit une interface simple pour créer une topologie de réseau, entraîner le modèle sur des ensembles de données avec des taux d'apprentissage et des époques spécifiés, et faire des prédictions sur de nouvelles données. Toute la logique de base, y compris la passe avant, le calcul de la perte et la passe arrière pour la descente de gradient, est implémentée à partir de zéro pour fournir un outil d'apprentissage automatique complet et autonome en Dart.",
+      "ar": "كان الهدف من هذا المشروع هو بناء مكتبة شبكة عصبية شاملة من الصفر بالكامل بلغة دارت، دون الاعتماد على أي أطر تعلم آلي خارجية. كان هذا المسعى مدفوعًا بالرغبة في فهم الآليات الأساسية للتعلم الآلي بعمق، من هياكل البيانات الأساسية إلى تعقيدات الانتشار العكسي.\n\nتتميز المكتبة ببنية مرنة متعددة الطبقات تسمح ببناء شبكات عصبية عميقة. وهي تدعم وظائف التنشيط القياسية المتعددة مثل ReLU و Sigmoid و Softmax، وهي مصممة بواجهة قابلة للتوسيع تتيح للمطورين دمج وظائف التنشيط المخصصة الخاصة بهم بسهولة. تم بناء المكتبة بأكملها على مكتبة مصفوفات دارت المخصصة، مما يضمن أن جميع العمليات الرياضية الأساسية فعالة ومحسنة.\n\nتوفر واجهة برمجة التطبيقات واجهة بسيطة لإنشاء طوبولوجيا الشبكة، وتدريب النموذج على مجموعات البيانات بمعدلات تعلم وحقب محددة، وإجراء تنبؤات على بيانات جديدة. يتم تنفيذ كل المنطق الأساسي، بما في ذلك التمرير الأمامي، وحساب الخسارة، والتمرير الخلفي لانحدار التدرج، من الصفر لتوفير أداة تعلم آلي كاملة ومستقلة في دارت."
+    },
+    "images": [],
+    "tags": ["Machine Learning", "Dart", "From Scratch", "Library"],
+    "github": "https://github.com/AlanMet/DartML",
+    "demo": null
   },
   {
-    "titleKey": "proj-token-lib-title",
-    "descKey": "proj-token-lib-desc",
-    "tags": ["Dart", "NLP"],
-    "link": "https://github.com/AlanMet/DartTokenizer"
+    "id": "proj-timeless-echo",
+    "title": {
+      "en": "Flutter Text Adventure Engine",
+      "fr": "Moteur d'Aventure Textuelle",
+      "ar": "محرك مغامرات نصي بفلاتر"
+    },
+    "summary": {
+      "en": "Interactive text-based adventure on Flutter with a Firebase backend.",
+      "fr": "Aventure textuelle interactive sur Flutter avec un backend Firebase.",
+      "ar": "مغامرة نصية تفاعلية على فلاتر مع خلفية فايربيس."
+    },
+    "description": {
+      "en": "Timeless Echo is a modern re-imagining of classic text-based adventure games, built as a fully-featured mobile application using Flutter. It provides a dynamic and engaging interactive fiction experience, moving beyond static narratives to create a persistent world for the player.\n\nThe front-end is built entirely in Flutter, featuring a custom, responsive UI with both light and dark modes. For the backend, the application leverages Firebase's Realtime Database to store and retrieve all game-related data, including player state, room descriptions, and item locations. This allows for a seamless, real-time experience across sessions.\n\nThis project also served as a proving ground for experimenting with AI in a game context. Specifically, it explored how locally-run AI models could be used for dynamic content and image generation, aiming to enhance the narrative and create a more immersive and visually rich experience for the player.",
+      "fr": "Timeless Echo est une réinterprétation moderne des jeux d'aventure textuels classiques, conçue comme une application mobile complète utilisant Flutter. Il offre une expérience de fiction interactive dynamique et captivante, dépassant les récits statiques pour créer un monde persistant pour le joueur.\n\nL'interface front-end est entièrement construite en Flutter, avec une interface utilisateur personnalisée et réactive, dotée de modes clair et sombre. Pour le backend, l'application utilise la base de données en temps réel de Firebase pour stocker et récupérer toutes les données liées au jeu, y compris l'état du joueur, les descriptions des pièces et l'emplacement des objets. Cela permet une expérience fluide et en temps réel entre les sessions.\n\nCe projet a également servi de terrain d'essai pour expérimenter l'IA dans un contexte de jeu. Plus précisément, il a exploré comment les modèles d'IA exécutés localement pourraient être utilisés pour la génération de contenu dynamique et d'images, dans le but d'améliorer le récit et de créer une expérience plus immersive et visuellement riche pour le joueur.",
+      "ar": "Timeless Echo هو إعادة تصور حديثة لألعاب المغامرات النصية الكلاسيكية، تم بناؤه كتطبيق محمول كامل الميزات باستخدام Flutter. يوفر تجربة خيال تفاعلي ديناميكية وجذابة، تتجاوز السرد الثابت لإنشاء عالم مستمر للاعب.\n\nتم بناء الواجهة الأمامية بالكامل باستخدام Flutter، وتتميز بواجهة مستخدم مخصصة ومتجاوبة مع وضعي الإضاءة الفاتح والداكن. بالنسبة للواجهة الخلفية، يستفيد التطبيق من قاعدة بيانات Firebase Realtime لتخزين واسترداد جميع البيانات المتعلقة باللعبة، بما في ذلك حالة اللاعب وأوصاف الغرف ومواقع العناصر. هذا يسمح بتجربة سلسة وفي الوقت الفعلي عبر الجلسات.\n\nكان هذا المشروع أيضًا بمثابة أرض اختبار لتجربة الذكاء الاصطناعي في سياق اللعبة. على وجه التحديد، استكشف كيف يمكن استخدام نماذج الذكاء الاصطناعي التي تعمل محليًا لتوليد المحتوى الديناميكي والصور، بهدف تعزيز السرد وإنشاء تجربة غامرة وأكثر ثراءً بصريًا للاعب."
+    },
+    "images": ["images/timelessecho.jpg"],
+    "tags": ["Flutter", "Firebase", "Mobile", "Game Development"],
+    "github": "https://github.com/AlanMet/timeless_echo",
+    "demo": null
   },
   {
-    "titleKey": "proj-shakespeare-title",
-    "descKey": "proj-shakespeare-desc",
-    "tags": ["NLP", "Python"],
-    "link": "https://github.com/AlanMet/ShakespeareGenerator"
+    "id": "proj-zork-remake",
+    "title": {
+      "en": "C# Language Parser Engine",
+      "fr": "Moteur d'Analyse de Langage C#",
+      "ar": "محرك تحليل لغة C#"
+    },
+    "summary": {
+      "en": "A modern remake of Zork with a custom text adventure engine.",
+      "fr": "Un remake moderne de Zork avec un moteur d'aventure textuel personnalisé.",
+      "ar": "إعادة صنع حديثة للعبة Zork بمحرك مغامرات نصي مخصص."
+    },
+    "description": {
+      "en": "This project is a sophisticated remake of the classic text adventure Zork, written from the ground up in C#. The primary goal was not just to recreate the game, but to engineer a robust and extensible text adventure engine capable of parsing complex, natural language commands.\n\nThe heart of the engine is its command parser, which tokenizes user input and classifies each word by type (verb, noun, preposition). This allows the system to understand multi-word commands and complex sentences. To improve user experience, it features a typo-correction mechanism using the Levenshtein distance algorithm, which provides 'Did you mean...?' suggestions for misspelled words.\n\nThe engine is designed with a modular architecture in .NET, where rooms, items, and the player are all distinct objects with their own properties and logic. This object-oriented approach makes the world easy to expand, modify, and maintain, allowing for the creation of intricate and deeply interactive environments.",
+      "fr": "Ce projet est un remake sophistiqué de l'aventure textuelle classique Zork, entièrement écrit en C#. L'objectif principal n'était pas seulement de recréer le jeu, mais de concevoir un moteur d'aventure textuel robuste et extensible, capable d'analyser des commandes complexes en langage naturel.\n\nLe cœur du moteur est son analyseur de commandes, qui segmente l'entrée de l'utilisateur et classifie chaque mot par type (verbe, nom, préposition). Cela permet au système de comprendre des commandes de plusieurs mots et des phrases complexes. Pour améliorer l'expérience utilisateur, il dispose d'un mécanisme de correction des fautes de frappe utilisant l'algorithme de distance de Levenshtein, qui fournit des suggestions 'Vouliez-vous dire...?' pour les mots mal orthographiés.\n\nLe moteur est conçu avec une architecture modulaire en .NET, où les pièces, les objets et le joueur sont tous des objets distincts avec leurs propres propriétés et logiques. Cette approche orientée objet rend le monde facile à étendre, à modifier et à maintenir, permettant la création d'environnements complexes et profondément interactifs.",
+      "ar": "هذا المشروع هو إعادة صنع متطورة للمغامرة النصية الكلاسيكية Zork، مكتوب من الصفر بلغة C#. لم يكن الهدف الأساسي مجرد إعادة إنشاء اللعبة، بل هندسة محرك مغامرات نصي قوي وقابل للتوسيع، قادر على تحليل الأوامر المعقدة باللغة الطبيعية.\n\nقلب المحرك هو محلل الأوامر الخاص به، الذي يقوم بتقسيم مدخلات المستخدم وتصنيف كل كلمة حسب النوع (فعل، اسم، حرف جر). هذا يسمح للنظام بفهم الأوامر متعددة الكلمات والجمل المعقدة. لتحسين تجربة المستخدم، يتميز بآلية تصحيح الأخطاء المطبعية باستخدام خوارزمية مسافة ليفنشتاين، والتي توفر اقتراحات 'هل تقصد...؟' للكلمات المكتوبة بشكل خاطئ.\n\nتم تصميم المحرك ببنية معيارية في .NET، حيث تكون الغرف والعناصر واللاعب كلها كائنات مميزة بخصائصها ومنطقها الخاص. هذا النهج الموجه للكائنات يجعل العالم سهل التوسيع والتعديل والصيانة، مما يسمح بإنشاء بيئات معقدة وتفاعلية للغاية."
+    },
+    "images": [],
+    "tags": ["C#", ".NET", "Game Development", "Engine"],
+    "github": "https://github.com/AlanMet/ZorkRemake",
+    "demo": null
   },
   {
-    "titleKey": "proj-cmd-parser-title",
-    "descKey": "proj-cmd-parser-desc",
-    "tags": ["C#", "Dart", "Flutter"],
-    "link": "https://github.com/AlanMet/CommandParser"
+    "id": "proj-dart-matrix",
+    "title": {
+      "en": "Dart Numerical Computing",
+      "fr": "Calcul Numérique en Dart",
+      "ar": "الحوسبة الرقمية بدارت"
+    },
+    "summary": {
+      "en": "A lightweight and efficient matrix manipulation library in Dart.",
+      "fr": "Une bibliothèque de manipulation matricielle légère et efficace en Dart.",
+      "ar": "مكتبة معالجة مصفوفات خفيفة وفعالة في لغة دارت."
+    },
+    "description": {
+      "en": "This library was created to provide a lightweight, efficient, and standalone foundation for numerical and scientific computing in Dart. It addresses the need for a dedicated tool for matrix manipulation without the overhead of larger external packages, making it ideal for targeted machine learning and computational tasks.\n\nIt implements the core `Matrix` class with full support for fundamental operations, including addition, subtraction, scalar multiplication, and dot product (matrix multiplication). It also includes essential utility functions like transpose, as well as helpers for creating specific types of matrices (e.g., identity, random matrices with normal distribution).\n\nAs the foundational layer for the Dart Neural Network library, every function was optimized for performance. The library also contains specialized utilities within its `nnutils` module, such as implementations of activation functions and their derivatives, which are critical for building and training machine learning models from scratch.",
+      "fr": "Cette bibliothèque a été créée pour fournir une base légère, efficace et autonome pour le calcul numérique et scientifique en Dart. Elle répond au besoin d'un outil dédié à la manipulation de matrices sans la surcharge des plus grands paquets externes, ce qui la rend idéale pour des tâches ciblées d'apprentissage automatique et de calcul.\n\nElle implémente la classe de base `Matrix` avec un support complet pour les opérations fondamentales, y compris l'addition, la soustraction, la multiplication par un scalaire et le produit scalaire (multiplication de matrices). Elle comprend également des fonctions utilitaires essentielles comme la transposition, ainsi que des assistants pour créer des types spécifiques de matrices (par exemple, identité, matrices aléatoires avec une distribution normale).\n\nEn tant que couche fondamentale de la bibliothèque de réseau neuronal Dart, chaque fonction a été optimisée pour la performance. La bibliothèque contient également des utilitaires spécialisés dans son module `nnutils`, tels que des implémentations de fonctions d'activation et de leurs dérivées, qui sont essentielles pour construire et entraîner des modèles d'apprentissage automatique à partir de zéro.",
+      "ar": "تم إنشاء هذه المكتبة لتوفير أساس خفيف وفعال ومستقل للحوسبة الرقمية والعلمية في دارت. إنها تلبي الحاجة إلى أداة مخصصة لمعالجة المصفوفات دون العبء الزائد للحزم الخارجية الأكبر، مما يجعلها مثالية لمهام التعلم الآلي والحوسبة المستهدفة.\n\nتنفذ فئة `Matrix` الأساسية مع دعم كامل للعمليات الأساسية، بما في ذلك الجمع والطرح والضرب القياسي والضرب النقطي (ضرب المصفوفات). كما تتضمن وظائف مساعدة أساسية مثل التحويل، بالإضافة إلى مساعدين لإنشاء أنواع معينة من المصفوفات (على سبيل المثال، الهوية، المصفوفات العشوائية ذات التوزيع الطبيعي).\n\nكبنية أساسية لمكتبة الشبكات العصبية في دارت، تم تحسين كل وظيفة من أجل الأداء. تحتوي المكتبة أيضًا على أدوات مساعدة متخصصة داخل وحدة `nnutils` الخاصة بها، مثل تطبيقات وظائف التنشيط ومشتقاتها، والتي تعتبر حاسمة لبناء وتدريب نماذج التعلم الآلي من الصفر."
+    },
+    "images": [],
+    "tags": ["Dart", "Linear Algebra", "Numerical Computing"],
+    "github": "https://github.com/AlanMet/DartMatrix",
+    "demo": null
   },
   {
-    "titleKey": "proj-rl-ttt-title",
-    "descKey": "proj-rl-ttt-desc",
-    "tags": ["Reinforcement Learning", "Python"],
-    "link": "https://github.com/AlanMet/RL-TicTacToe"
+    "id": "proj-hashvault",
+    "title": {
+      "en": "Secure Flutter Password Vault",
+      "fr": "Coffre-fort Sécurisé Flutter",
+      "ar": "خزنة كلمات مرور فلاتر الآمنة"
+    },
+    "summary": {
+      "en": "A secure password manager for Flutter with encryption and fail-safes.",
+      "fr": "Un gestionnaire de mots de passe sécurisé pour Flutter avec chiffrement et sécurités.",
+      "ar": "مدير كلمات مرور آمن لـ فلاتر مع تشفير وآليات أمان."
+    },
+    "description": {
+      "en": "HashVault is a Flutter-based password manager designed with a primary focus on security and data protection. In a world of constant data breaches, the goal was to create a local-first, highly secure vault for a user's most sensitive credentials, operating entirely on the user's device without cloud synchronization.\n\nThe app employs multiple layers of security. All stored credentials are encrypted using AES before being saved to a local file. Crucially, the app features a fail-safe mechanism where all stored data is automatically and irrecoverably wiped after 10 consecutive failed login attempts, preventing brute-force attacks. Each client has a unique, randomly generated key for encryption, ensuring that data from one device cannot be decrypted on another.\n\nBeyond security, the UI provides helpful features like indicators for password age and reuse (orange for old/reused, red for very old). It also includes a search function and quick-access buttons to open the associated website directly, blending strong security with practical usability.",
+      "fr": "HashVault est un gestionnaire de mots de passe basé sur Flutter, conçu avec un accent principal sur la sécurité et la protection des données. Dans un monde de violations de données constantes, l'objectif était de créer un coffre-fort hautement sécurisé et local pour les informations d'identification les plus sensibles de l'utilisateur, fonctionnant entièrement sur l'appareil de l'utilisateur sans synchronisation cloud.\n\nL'application emploie plusieurs couches de sécurité. Toutes les informations d'identification stockées sont chiffrées à l'aide d'AES avant d'être enregistrées dans un fichier local. De manière cruciale, l'application dispose d'un mécanisme de sécurité qui efface automatiquement et de manière irréversible toutes les données stockées après 10 tentatives de connexion infructueuses consécutives, empêchant ainsi les attaques par force brute. Chaque client dispose d'une clé de chiffrement unique générée de manière aléatoire, garantissant que les données d'un appareil ne peuvent pas être déchiffrées sur un autre.\n\nAu-delà de la sécurité, l'interface utilisateur offre des fonctionnalités utiles comme des indicateurs d'âge et de réutilisation des mots de passe (orange pour ancien/réutilisé, rouge pour très ancien). Elle comprend également une fonction de recherche et des boutons d'accès rapide pour ouvrir directement le site web associé, alliant une sécurité renforcée à une facilité d'utilisation pratique.",
+      "ar": "HashVault هو مدير كلمات مرور يعتمد على Flutter ومصمم مع التركيز الأساسي على الأمان وحماية البيانات. في عالم مليء بانتهاكات البيانات المستمرة، كان الهدف هو إنشاء خزنة آمنة للغاية ومحلية لبيانات اعتماد المستخدم الأكثر حساسية، تعمل بالكامل على جهاز المستخدم دون مزامنة سحابية.\n\nيستخدم التطبيق طبقات متعددة من الأمان. يتم تشفير جميع بيانات الاعتماد المخزنة باستخدام AES قبل حفظها في ملف محلي. بشكل حاسم، يتميز التطبيق بآلية أمان حيث يتم مسح جميع البيانات المخزنة تلقائيًا وبشكل لا يمكن استرداده بعد 10 محاولات تسجيل دخول فاشلة متتالية، مما يمنع هجمات القوة الغاشمة. لكل عميل مفتاح تشفير فريد يتم إنشاؤه عشوائيًا، مما يضمن عدم إمكانية فك تشفير البيانات من جهاز على جهاز آخر.\n\nإلى جانب الأمان، توفر واجهة المستخدم ميزات مفيدة مثل مؤشرات عمر كلمة المرور وإعادة استخدامها (برتقالي للقديم / المعاد استخدامه، أحمر للقديم جدًا). كما يتضمن وظيفة بحث وأزرار وصول سريع لفتح موقع الويب المرتبط مباشرة، مما يمزج بين الأمان القوي وسهولة الاستخدام العملية."
+    },
+    "images": ["images/password_manager_preview.png"],
+    "tags": ["Flutter", "Security", "Mobile", "Encryption"],
+    "github": "https://github.com/AlanMet/HashVault",
+    "demo": null
   },
   {
-    "titleKey": "proj-smart-home-title",
-    "descKey": "proj-smart-home-desc",
-    "tags": ["Python", "Tkinter"],
-    "link": "https://github.com/AlanMet/SmartHomeApp"
+    "id": "proj-mcp-weather",
+    "title": {
+      "en": "AI-Driven Tool Orchestration",
+      "fr": "Orchestration d'Outils par IA",
+      "ar": "تنسيق أدوات بالذكاء الاصطناعي"
+    },
+    "summary": {
+      "en": "An AI-driven weather tool using a local LLM and Model Context Protocol.",
+      "fr": "Un outil météo piloté par l'IA utilisant un LLM local et le Protocole de Contexte de Modèle.",
+      "ar": "أداة طقس مدفوعة بالذكاء الاصطناعي تستخدم LLM محلي وبروتوكول سياق النموذج."
+    },
+    "description": {
+      "en": "This project is a practical exploration of modern AI-driven tool use, inspired by Anthropic's Model Context Protocol (MCP). It demonstrates how a local Large Language Model (LLM) can act as a reasoning engine to orchestrate multiple, independent tools to answer a complex user query, rather than being a simple chatbot.\n\nThe system is split into a Node.js client and server. The server exposes a set of tools (e.g., 'get-weather-forecast', 'get-latlong-from-name'). The client takes a natural language query from the user, presents the query and the available tools to a local LLM running via Ollama, and then executes the specific tool calls that the LLM requests in a structured, multi-step thought process.\n\nFor a query like 'What's the weather in Paris, Texas?', the LLM first decides to call the 'get-latlong-from-name' tool. The client executes this call, feeds the resulting latitude and longitude back to the LLM, which then decides to call the 'get-worldwide-forecast' tool with those coordinates. The final result is then synthesized by the LLM into a natural language answer for the user, showcasing a sophisticated level of autonomous task decomposition and execution.",
+      "fr": "Ce projet est une exploration pratique de l'utilisation moderne d'outils pilotés par l'IA, inspirée du Protocole de Contexte de Modèle (MCP) d'Anthropic. Il démontre comment un Grand Modèle de Langage (LLM) local peut agir comme un moteur de raisonnement pour orchestrer plusieurs outils indépendants afin de répondre à une requête complexe de l'utilisateur, au lieu d'être un simple chatbot.\n\nLe système est divisé en un client et un serveur Node.js. Le serveur expose un ensemble d'outils (par exemple, 'get-weather-forecast', 'get-latlong-from-name'). Le client prend une requête en langage naturel de l'utilisateur, présente la requête et les outils disponibles à un LLM local fonctionnant via Ollama, puis exécute les appels d'outils spécifiques que le LLM demande dans un processus de pensée structuré en plusieurs étapes.\n\nPour une requête comme 'Quel temps fait-il à Paris, Texas ?', le LLM décide d'abord d'appeler l'outil 'get-latlong-from-name'. Le client exécute cet appel, renvoie la latitude et la longitude résultantes au LLM, qui décide ensuite d'appeler l'outil 'get-worldwide-forecast' avec ces coordonnées. Le résultat final est ensuite synthétisé par le LLM en une réponse en langage naturel pour l'utilisateur, démontrant un niveau sophistiqué de décomposition et d'exécution autonomes des tâches.",
+      "ar": "هذا المشروع هو استكشاف عملي للاستخدام الحديث للأدوات المدفوعة بالذكاء الاصطناعي، مستوحى من بروتوكول سياق النموذج (MCP) الخاص بـ Anthropic. إنه يوضح كيف يمكن لنموذج لغوي كبير (LLM) محلي أن يعمل كمحرك استدلال لتنسيق أدوات متعددة ومستقلة للإجابة على استعلام مستخدم معقد، بدلاً من أن يكون مجرد روبوت محادثة بسيط.\n\nينقسم النظام إلى عميل وخادم Node.js. يعرض الخادم مجموعة من الأدوات (على سبيل المثال، 'get-weather-forecast' ، 'get-latlong-from-name'). يأخذ العميل استعلامًا باللغة الطبيعية من المستخدم، ويعرض الاستعلام والأدوات المتاحة على LLM محلي يعمل عبر Ollama، ثم ينفذ استدعاءات الأدوات المحددة التي يطلبها LLM في عملية تفكير منظمة متعددة الخطوات.\n\nلاستعلام مثل 'ما هو الطقس في باريس، تكساس؟' ، يقرر LLM أولاً استدعاء أداة 'get-latlong-from-name'. ينفذ العميل هذا الاستدعاء، ويعيد خط العرض وخط الطول الناتجين إلى LLM، الذي يقرر بعد ذلك استدعاء أداة 'get-worldwide-forecast' بهذه الإحداثيات. ثم يتم تجميع النتيجة النهائية بواسطة LLM في إجابة باللغة الطبيعية للمستخدم، مما يعرض مستوى متطورًا من تحليل المهام المستقل وتنفيذها."
+    },
+    "images": [],
+    "tags": ["Node.js", "TypeScript", "AI", "LLM"],
+    "github": "https://github.com/AlanMet/MCP-Weather-Client",
+    "demo": null
   },
   {
-    "titleKey": "proj-patchwork-title",
-    "descKey": "proj-patchwork-desc",
-    "tags": ["Tkinter"],
-    "link": "https://github.com/AlanMet/PatchworkApp"
+    "id": "proj-sinenn",
+    "title": {
+      "en": "Neural Net Learns Sine",
+      "fr": "Réseau Neuronal Apprend Sinus",
+      "ar": "شبكة عصبية تتعلم الجيب"
+    },
+    "summary": {
+      "en": "A simple neural network in Dart that learns to approximate the sine function.",
+      "fr": "Un réseau de neurones simple en Dart qui apprend à approximer la fonction sinus.",
+      "ar": "شبكة عصبية بسيطة في دارت تتعلم تقريب دالة الجيب."
+    },
+    "description": {
+      "en": "SineWaveNN serves as a concrete, demonstrable application of the from-scratch Dart Neural Network and Matrix libraries. The project's goal was to prove the viability and effectiveness of these custom-built tools by training a minimal network to learn a non-linear function: the sine wave.\n\nThe project defines a simple 1-10-1 feedforward network: one input neuron, a hidden layer with 10 neurons using the tanh activation function, and one output neuron. The training process involves programmatically generating a dataset of random input values between 0 and 2π and their corresponding sin(x) results.\n\nThe network is trained using basic gradient descent to minimize mean squared error loss over thousands of epochs. After training, the model's accuracy is evaluated on a new, unseen test set, where it consistently demonstrates a high degree of accuracy in approximating the sine function. This successful outcome validates the correctness and utility of the underlying foundational libraries.",
+      "fr": "SineWaveNN sert d'application concrète et démontrable des bibliothèques de réseau neuronal et de matrice Dart créées à partir de zéro. L'objectif du projet était de prouver la viabilité et l'efficacité de ces outils personnalisés en entraînant un réseau minimal à apprendre une fonction non linéaire : la fonction sinus.\n\nLe projet définit un réseau feedforward simple 1-10-1 : un neurone d'entrée, une couche cachée de 10 neurones utilisant la fonction d'activation tanh, et un neurone de sortie. Le processus d'entraînement implique la génération programmatique d'un ensemble de données de valeurs d'entrée aléatoires entre 0 et 2π et leurs résultats sin(x) correspondants.\n\nLe réseau est entraîné en utilisant une descente de gradient de base pour minimiser la perte d'erreur quadratique moyenne sur des milliers d'époques. Après l'entraînement, la précision du modèle est évaluée sur un nouvel ensemble de test non vu, où il démontre constamment un haut degré de précision dans l'approximation de la fonction sinus. Ce résultat concluant valide la justesse et l'utilité des bibliothèques fondamentales sous-jacentes.",
+      "ar": "يعمل SineWaveNN كتطبيق ملموس وقابل للإثبات لمكتبات الشبكات العصبية والمصفوفات في دارت التي تم إنشاؤها من الصفر. كان هدف المشروع هو إثبات جدوى وفعالية هذه الأدوات المخصصة من خلال تدريب شبكة بسيطة لتعلم دالة غير خطية: دالة الجيب.\n\nيحدد المشروع شبكة تغذية أمامية بسيطة 1-10-1: عصبون إدخال واحد، وطبقة مخفية بها 10 عصبونات تستخدم دالة التنشيط tanh، وعصبون إخراج واحد. تتضمن عملية التدريب إنشاء مجموعة بيانات برمجيًا من قيم الإدخال العشوائية بين 0 و 2π ونتائج sin(x) المقابلة لها.\n\nيتم تدريب الشبكة باستخدام انحدار التدرج الأساسي لتقليل خسارة متوسط الخطأ التربيعي على مدى آلاف الحقب. بعد التدريب، يتم تقييم دقة النموذج على مجموعة اختبار جديدة غير مرئية، حيث يوضح باستمرار درجة عالية من الدقة في تقريب دالة الجيب. هذه النتيجة الناجحة تؤكد صحة وفائدة المكتبات الأساسية الأساسية."
+    },
+    "images": [],
+    "tags": ["Dart", "Machine Learning"],
+    "github": "https://github.com/AlanMet/SineWaveNN",
+    "demo": null
+  },
+  {
+    "id": "proj-patchwork",
+    "title": {
+      "en": "Graphical Pattern Generator",
+      "fr": "Générateur de Motifs Graphique",
+      "ar": "مولد أنماط رسومي"
+    },
+    "summary": {
+      "en": "A graphical patchwork pattern generator using Python and Tkinter.",
+      "fr": "Un générateur de motifs de patchwork graphique utilisant Python et Tkinter.",
+      "ar": "مولد رسومي لأنماط المرقعة باستخدام بايثون و Tkinter."
+    },
+    "description": {
+      "en": "This is a graphical desktop application that allows users to visually create and edit patchwork quilt patterns. Built in Python, it provides an interactive and creative tool for designers and hobbyists to conceptualize and modify designs digitally before committing to physical materials.\n\nThe program, built on John Zelle's Graphics library, presents a grid that users can customize in size. Users can select individual tiles or groups of tiles and apply different pre-defined patterns and a wide variety of colors. An edit mode allows for fine-tuned changes, and a randomization feature can be used to generate new ideas and spark creativity.\n\nThe application is entirely event-driven, responding to mouse clicks for selection and keyboard shortcuts for editing commands. The visual components are all drawn and managed by the graphics library, demonstrating a solid understanding of building interactive graphical user interfaces and managing application state.",
+      "fr": "Il s'agit d'une application de bureau graphique qui permet aux utilisateurs de créer et de modifier visuellement des motifs de patchwork. Conçue en Python, elle fournit un outil interactif et créatif pour les designers et les amateurs afin de conceptualiser et de modifier des conceptions numériquement avant de s'engager dans des matériaux physiques.\n\nLe programme, basé sur la bibliothèque graphique de John Zelle, présente une grille que les utilisateurs peuvent personnaliser en taille. Les utilisateurs peuvent sélectionner des carreaux individuels ou des groupes de carreaux et appliquer différents motifs prédéfinis ainsi qu'une grande variété de couleurs. Un mode d'édition permet des modifications précises, et une fonction de randomisation peut être utilisée pour générer de nouvelles idées et stimuler la créativité.\n\nL'application est entièrement pilotée par les événements, réagissant aux clics de souris pour la sélection et aux raccourcis clavier pour les commandes d'édition. Les composants visuels sont tous dessinés et gérés par la bibliothèque graphique, ce qui démontre une solide compréhension de la création d'interfaces utilisateur graphiques interactives et de la gestion de l'état de l'application.",
+      "ar": "هذا تطبيق سطح مكتب رسومي يتيح للمستخدمين إنشاء وتعديل أنماط لحاف المرقعة بشكل مرئي. تم بناؤه بلغة بايثون، ويوفر أداة تفاعلية وإبداعية للمصممين والهواة لتصور وتعديل التصميمات رقميًا قبل الالتزام بالمواد المادية.\n\nيعرض البرنامج، المبني على مكتبة رسومات جون زيل، شبكة يمكن للمستخدمين تخصيص حجمها. يمكن للمستخدمين تحديد مربعات فردية أو مجموعات من المربعات وتطبيق أنماط مختلفة محددة مسبقًا ومجموعة واسعة من الألوان. يسمح وضع التحرير بإجراء تغييرات دقيقة، ويمكن استخدام ميزة العشوائية لتوليد أفكار جديدة وإثارة الإبداع.\n\nالتطبيق مدفوع بالأحداث بالكامل، ويستجيب لنقرات الماوس للاختيار واختصارات لوحة المفاتيح لأوامر التحرير. يتم رسم وإدارة جميع المكونات المرئية بواسطة مكتبة الرسومات، مما يدل على فهم قوي لبناء واجهات مستخدم رسومية تفاعلية وإدارة حالة التطبيق."
+    },
+    "images": ["images/patchwork_preview.png"],
+    "tags": ["Python", "Graphics", "Tkinter"],
+    "github": "https://github.com/AlanMet/Patchwork",
+    "demo": null
+  },
+  {
+    "id": "proj-jwt",
+    "title": {
+      "en": "Dart RSA Encryption Library",
+      "fr": "Bibliothèque Chiffrement RSA",
+      "ar": "مكتبة تشفير RSA بدارت"
+    },
+    "summary": {
+      "en": "A personal Dart library for creating and verifying RS256 JSON Web Tokens.",
+      "fr": "Une bibliothèque personnelle en Dart pour créer et vérifier des jetons Web JSON RS256.",
+      "ar": "مكتبة شخصية بلغة دارت لإنشاء والتحقق من رموز الويب JSON بتشفير RS256."
+    },
+    "description": {
+      "en": "This project is a self-contained, lightweight Dart library for handling JSON Web Tokens (JWTs) using RSA (RS256) encryption. It was created to provide a simple, dependency-free way to manage secure tokens in Dart and Flutter applications, with a clear focus on the asymmetric RS256 signing algorithm.\n\nThe library's core `JWT` class provides three main functions: creating, verifying, and decoding tokens. It can generate a signed token from a given payload and an RSA private key. It can also verify a token's signature against a public key and includes a built-in check to ensure the token has not expired based on the `exp` claim. Finally, it can decode the payload of any token without verifying its signature, for cases where only the content is needed.\n\nKeys can be provided directly as PEM-formatted strings or as paths to key files. The library is designed to be easy to integrate into any project, offering a straightforward API for handling a critical aspect of modern application security.",
+      "fr": "Ce projet est une bibliothèque Dart autonome et légère pour la gestion des jetons Web JSON (JWT) utilisant le chiffrement RSA (RS256). Elle a été créée pour offrir un moyen simple et sans dépendance de gérer des jetons sécurisés dans les applications Dart et Flutter, avec un accent clair sur l'algorithme de signature asymétrique RS256.\n\nLa classe de base `JWT` de la bibliothèque fournit trois fonctions principales : la création, la vérification et le décodage des jetons. Elle peut générer un jeton signé à partir d'une charge utile donnée et d'une clé privée RSA. Elle peut également vérifier la signature d'un jeton par rapport à une clé publique et inclut une vérification intégrée pour s'assurer que le jeton n'a pas expiré en se basant sur la revendication `exp`. Enfin, elle peut décoder la charge utile de n'importe quel jeton sans vérifier sa signature, pour les cas où seul le contenu est nécessaire.\n\nLes clés peuvent être fournies directement sous forme de chaînes au format PEM ou de chemins d'accès à des fichiers de clés. La bibliothèque est conçue pour être facile à intégrer dans n'importe quel projet, offrant une API simple pour gérer un aspect essentiel de la sécurité des applications modernes.",
+      "ar": "هذا المشروع هو مكتبة دارت خفيفة ومستقلة للتعامل مع رموز الويب JSON (JWTs) باستخدام تشفير RSA (RS256). تم إنشاؤها لتوفير طريقة بسيطة وخالية من التبعيات لإدارة الرموز الآمنة في تطبيقات دارت وفلاتر، مع التركيز الواضح على خوارزمية التوقيع غير المتماثلة RS256.\n\nتوفر فئة `JWT` الأساسية في المكتبة ثلاث وظائف رئيسية: إنشاء الرموز والتحقق منها وفك تشفيرها. يمكنها إنشاء رمز موقع من حمولة معينة ومفتاح RSA خاص. يمكنها أيضًا التحقق من توقيع الرمز مقابل مفتاح عام وتتضمن فحصًا مدمجًا للتأكد من عدم انتهاء صلاحية الرمز بناءً على مطالبة `exp`. أخيرًا، يمكنها فك تشفير حمولة أي رمز دون التحقق من توقيعه، للحالات التي يكون فيها المحتوى فقط هو المطلوب.\n\nيمكن توفير المفاتيح مباشرة كسلاسل بتنسيق PEM أو كمسارات لملفات المفاتيح. تم تصميم المكتبة لتكون سهلة التكامل في أي مشروع، وتقدم واجهة برمجة تطبيقات مباشرة للتعامل مع جانب حاسم من أمن التطبيقات الحديثة."
+    },
+    "images": [],
+    "tags": ["Dart", "Security", "JWT", "Library"],
+    "github": "https://github.com/AlanMet/DartJWT",
+    "demo": null
   }
 ]
