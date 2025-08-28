@@ -1,62 +1,222 @@
 [
   {
-    "titleKey": "proj-study-buddy-title",
-    "descKey": "proj-study-buddy-desc",
-    "tags": ["Leadership", "Flutter", "Firebase"],
-    "link": "https://github.com/AlanMet/StudyBuddyFinder"
+    "id": "proj-lazulinile",
+    "title": {
+      "en": "Lazulinile.com Website",
+      "fr": "Site Web Lazulinile.com",
+      "ar": "موقع Lazulinile.com"
+    },
+    "summary": {
+      "en": "A multi-language, responsive website for a French travel agency.",
+      "fr": "Un site web multilingue et adaptatif pour une agence de voyage française.",
+      "ar": "موقع إلكتروني متعدد اللغات ومتجاوب لوكالة سفر فرنسية."
+    },
+    "description": {
+      "en": "I built the official website for Lazulinile, a French travel agency. The site is live and can be viewed at lazulinile.com. A key feature of this project was its international audience, so I implemented full multi-language support from the ground up to cater to different markets.\n\nI also ensured the design was fully responsive, providing a seamless experience across all devices, from desktops to mobile phones. This was critical for travelers planning on the go. The GitHub repository for this project is private to protect the client's proprietary code and business interests.",
+      "fr": "J'ai construit le site officiel pour Lazulinile, une agence de voyage française. Le site est en ligne et visible sur lazulinile.com. Une caractéristique clé de ce projet était son public international, j'ai donc mis en œuvre un support multilingue complet dès le départ pour répondre aux différents marchés.\n\nJe me suis également assuré que le design soit entièrement adaptatif, offrant une expérience fluide sur tous les appareils, des ordinateurs de bureau aux téléphones mobiles. C'était essentiel pour les voyageurs planifiant leurs déplacements. Le dépôt GitHub de ce projet est privé pour protéger le code propriétaire et les intérêts commerciaux du client.",
+      "ar": "لقد قمت ببناء الموقع الرسمي لوكالة سفر فرنسية تدعى لازولينيل. الموقع حاليًا مباشر ويمكن تصفحه على lazulinile.com. كانت إحدى الميزات الرئيسية لهذا المشروع هي جمهوره الدولي، لذلك قمت بتطبيق دعم كامل متعدد اللغات من البداية لتلبية احتياجات الأسواق المختلفة.\n\nكما حرصت على أن يكون التصميم متجاوبًا تمامًا، مما يوفر تجربة سلسة عبر جميع الأجهزة، من أجهزة الكمبيوتر المكتبية إلى الهواتف المحمولة. كان هذا أمرًا بالغ الأهمية للمسافرين الذين يخططون أثناء التنقل. مستودع GitHub لهذا المشروع خاص لحماية الكود المسجل والمصالح التجارية للعميل."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Full-Stack", "Web Development", "JavaScript", "Responsive Design"],
+    "github": null,
+    "demo": "https://lazulinile.com"
   },
   {
-    "titleKey": "proj-dart-ml-title",
-    "descKey": "proj-dart-ml-desc",
-    "tags": ["Machine Learning", "Dart", "Linear Algebra"],
-    "link": "https://github.com/AlanMet/DartML"
+    "id": "proj-fullstack-crypto",
+    "title": {
+      "en": "Full Stack Crypto Platform",
+      "fr": "Plateforme Crypto Full Stack",
+      "ar": "منصة تشفير متكاملة"
+    },
+    "summary": {
+      "en": "A full-stack application with a Python blockchain backend.",
+      "fr": "Une application full-stack avec un backend blockchain en Python.",
+      "ar": "تطبيق متكامل مع خلفية بلوكتشين بلغة بايثون."
+    },
+    "description": {
+      "en": "To demonstrate my ability to do full-stack development, I built a complete cryptocurrency platform from the ground up. The backend is a working blockchain, which I implemented in Python. While the currency isn't real, the system includes robust features like user authentication, allowing each user to manage multiple wallets securely.\n\nThe platform accurately simulates blockchain mechanics, where transactions are only finalized and stored once a new block is successfully 'mined'. I also built the functionality for users to send and receive funds between wallets, creating a comprehensive and functional proof-of-concept for a digital currency system.",
+      "fr": "Pour démontrer ma capacité à faire du développement full-stack, j'ai construit une plateforme de cryptomonnaie complète à partir de zéro. Le backend est une blockchain fonctionnelle, que j'ai implémentée en Python. Bien que la monnaie ne soit pas réelle, le système inclut des fonctionnalités robustes comme l'authentification des utilisateurs, permettant à chaque utilisateur de gérer plusieurs portefeuilles en toute sécurité.\n\nLa plateforme simule avec précision les mécanismes de la blockchain, où les transactions ne sont finalisées et stockées qu'une fois qu'un nouveau bloc est 'miné' avec succès. J'ai également intégré la fonctionnalité permettant aux utilisateurs d'envoyer et de recevoir des fonds entre portefeuilles, créant ainsi une preuve de concept complète et fonctionnelle pour un système de monnaie numérique.",
+      "ar": "لإظهار قدرتي على تطوير تطبيقات متكاملة، قمت ببناء منصة عملات مشفرة كاملة من الصفر. الواجهة الخلفية عبارة عن بلوكتشين عاملة قمت بتنفيذها بلغة بايثون. على الرغم من أن العملة ليست حقيقية، إلا أن النظام يتضمن ميزات قوية مثل مصادقة المستخدم، مما يسمح لكل مستخدم بإدارة محافظ متعددة بشكل آمن.\n\nتحاكي المنصة بدقة آليات البلوكتشين، حيث لا يتم إتمام المعاملات وتخزينها إلا بعد 'تعدين' كتلة جديدة بنجاح. لقد قمت أيضًا ببناء وظيفة تمكن المستخدمين من إرسال واستلام الأموال بين المحافظ، مما يخلق إثبات مفهوم شامل وعملي لنظام عملة رقمية."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Full-Stack", "Python", "Blockchain", "Web Development"],
+    "github": "https://github.com/AlanMet/Full-Stack-Crypto",
+    "demo": null
   },
   {
-    "titleKey": "proj-fl-research-title",
-    "descKey": "proj-fl-research-desc",
-    "tags": ["Research", "Cybersecurity", "Python"],
-    "link": "https://github.com/AlanMet/FL-Research"
+    "id": "proj-dart-nn",
+    "title": {
+      "en": "Dart Neural Network Library",
+      "fr": "Bibliothèque de Réseau Neuronal en Dart",
+      "ar": "مكتبة الشبكة العصبية بلغة دارت"
+    },
+    "summary": {
+      "en": "A neural network library built from scratch in Dart.",
+      "fr": "Une bibliothèque de réseau neuronal entièrement codée en Dart.",
+      "ar": "مكتبة شبكة عصبية مبنية من الصفر باستخدام لغة دارت."
+    },
+    "description": {
+      "en": "I developed a neural network library entirely from scratch in Dart, which was built upon my own custom matrix library. This project presented a significant challenge due to Dart's numerical precision limitations; during complex operations, values would sometimes become too small, resulting in nulls due to rounding. I experimented extensively with various weight initialization and optimization algorithms to mitigate this, though the underlying language limitation remained.\n\nDespite this, I successfully applied the library to a practical problem: predicting a sine wave function. Using 10,000 data points, my neural network achieved a notable 92% accuracy, demonstrating the library's viability for certain tasks.",
+      "fr": "J'ai développé une bibliothèque de réseau neuronal entièrement à partir de zéro en Dart, qui a été construite sur ma propre bibliothèque de matrices personnalisée. Ce projet a présenté un défi de taille en raison des limitations de précision numérique de Dart ; lors d'opérations complexes, les valeurs devenaient parfois trop petites, entraînant des nuls à cause de l'arrondi. J'ai expérimenté de manière approfondie avec divers algorithmes d'initialisation de poids et d'optimisation pour atténuer ce problème, bien que la limitation sous-jacente du langage soit restée.\n\nMalgré cela, j'ai appliqué avec succès la bibliothèque à un problème pratique : la prédiction d'une fonction sinusoïdale. En utilisant 10 000 points de données, mon réseau neuronal a atteint une précision remarquable de 92 %, démontrant la viabilité de la bibliothèque pour certaines tâches.",
+      "ar": "لقد قمت بتطوير مكتبة شبكة عصبية بالكامل من الصفر بلغة دارت، والتي بنيت على مكتبة المصفوفات المخصصة الخاصة بي. شكل هذا المشروع تحديًا كبيرًا بسبب قيود الدقة العددية في لغة دارت؛ فخلال العمليات المعقدة، كانت القيم تصبح أحيانًا صغيرة جدًا، مما يؤدي إلى قيم فارغة بسبب التقريب. لقد جربت بشكل مكثف العديد من خوارزميات تهيئة الأوزان والتحسين للتخفيف من هذا، على الرغم من أن قيود اللغة الأساسية ظلت قائمة.\n\nعلى الرغم من ذلك، نجحت في تطبيق المكتبة على مشكلة عملية: التنبؤ بدالة موجة جيبية. باستخدام 10,000 نقطة بيانات، حققت شبكتي العصبية دقة ملحوظة بنسبة 92%، مما يثبت جدوى المكتبة لمهام معينة."
+    },
+    "images": [],
+    "tags": ["Machine Learning", "Dart", "Neural Networks"],
+    "github": "https://github.com/AlanMet/SineWaveNN",
+    "demo": null
   },
   {
-    "titleKey": "proj-race-timer-title",
-    "descKey": "proj-race-timer-desc",
-    "tags": ["WebSockets", "JavaScript", "UX Design"],
-    "link": "https://github.com/AlanMet/RaceTimer"
+    "id": "proj-dart-matrix",
+    "title": {
+      "en": "Dart Matrix Library",
+      "fr": "Bibliothèque de Matrices en Dart",
+      "ar": "مكتبة المصفوفات بلغة دارت"
+    },
+    "summary": {
+      "en": "A comprehensive matrix operations library built in Dart.",
+      "fr": "Une bibliothèque complète d'opérations matricielles codée en Dart.",
+      "ar": "مكتبة شاملة لعمليات المصفوفات مبنية بلغة دارت."
+    },
+    "description": {
+      "en": "I built this matrix library from scratch in Dart to serve as a foundation for my machine learning projects in the language. It's feature-rich and includes many utilities specifically for building neural networks, such as softmax, sigmoid, and their derivatives, as well as exponential functions.\n\nThe library supports key matrix operations like transpose, addition, Hadamard product, and dot product. It also includes helper utilities for filling matrices, generating random values, calculating means, finding the max index, and rounding. A key feature is its ability to generate matrices based on specific data types like integers or doubles, providing flexibility for various applications.",
+      "fr": "J'ai construit cette bibliothèque de matrices à partir de zéro en Dart pour servir de base à mes projets d'apprentissage automatique dans ce langage. Elle est riche en fonctionnalités et inclut de nombreux utilitaires spécifiques à la construction de réseaux neuronaux, tels que softmax, sigmoïde, et leurs dérivées, ainsi que des fonctions exponentielles.\n\nLa bibliothèque prend en charge des opérations matricielles clés comme la transposition, l'addition, le produit d'Hadamard et le produit scalaire. Elle inclut également des utilitaires pour remplir des matrices, générer des valeurs aléatoires, calculer des moyennes, trouver l'index maximal et arrondir. Une caractéristique clé est sa capacité à générer des matrices basées sur des types de données spécifiques comme les entiers ou les doubles, offrant une flexibilité pour diverses applications.",
+      "ar": "لقد قمت ببناء مكتبة المصفوفات هذه من الصفر بلغة دارت لتكون بمثابة أساس لمشاريعي في تعلم الآلة بهذه اللغة. إنها غنية بالميزات وتتضمن العديد من الأدوات المساعدة خصيصًا لبناء الشبكات العصبية، مثل softmax و sigmoid ومشتقاتها، بالإضافة إلى الدوال الأسية.\n\nتدعم المكتبة عمليات المصفوفات الرئيسية مثل النقل والجمع وحاصل ضرب هادامارد والضرب النقطي. كما تتضمن أدوات مساعدة لملء المصفوفات وتوليد قيم عشوائية وحساب المتوسطات وإيجاد الفهرس الأقصى والتقريب. ومن الميزات الرئيسية قدرتها على توليد مصفوفات بناءً على أنواع بيانات محددة مثل الأعداد الصحيحة أو المزدوجة، مما يوفر مرونة لمختلف التطبيقات."
+    },
+    "images": [],
+    "tags": ["Dart", "Linear Algebra", "Machine Learning"],
+    "github": "https://github.com/AlanMet/DartMatrix",
+    "demo": null
   },
   {
-    "titleKey": "proj-token-lib-title",
-    "descKey": "proj-token-lib-desc",
-    "tags": ["Dart", "NLP"],
-    "link": "https://github.com/AlanMet/DartTokenizer"
+    "id": "proj-zork-csharp",
+    "title": {
+      "en": "Zork-style Game in C#",
+      "fr": "Jeu de type Zork en C#",
+      "ar": "لعبة بأسلوب Zork بلغة C#"
+    },
+    "summary": {
+      "en": "A complex, terminal-based adventure game with a custom command parser.",
+      "fr": "Un jeu d'aventure complexe en terminal avec un analyseur de commandes personnalisé.",
+      "ar": "لعبة مغامرات معقدة قائمة على الطرفية مع محلل أوامر مخصص."
+    },
+    "description": {
+      "en": "This was an incredibly difficult project I built for my A-level NEA. It's a terminal-based adventure game inspired by Zork. The core of the project is an incredibly complex command parser, which I based on 'Code with Huw's' parser. It understands natural language by parsing commands based on word types like verbs, nouns, and adverbs.\n\nThe game features a large map to explore with the ultimate goal of finding all the hidden treasures. While I wasn't able to fully complete every planned feature, the technical complexity and the robust parser I developed earned me a high grade and taught me a great deal about software architecture.",
+      "fr": "C'était un projet incroyablement difficile que j'ai réalisé pour mon A-level NEA. C'est un jeu d'aventure en terminal inspiré de Zork. Le cœur du projet est un analyseur de commandes d'une complexité incroyable, que j'ai basé sur l'analyseur de 'Code with Huw'. Il comprend le langage naturel en analysant les commandes en fonction des types de mots comme les verbes, les noms et les adverbes.\n\nLe jeu propose une grande carte à explorer avec pour objectif ultime de trouver tous les trésors cachés. Bien que je n'aie pas pu terminer entièrement toutes les fonctionnalités prévues, la complexité technique et l'analyseur robuste que j'ai développés m'ont valu une excellente note et m'ont beaucoup appris sur l'architecture logicielle.",
+      "ar": "كان هذا مشروعًا صعبًا للغاية قمت ببنائه من أجل شهادة A-level NEA الخاصة بي. إنها لعبة مغامرات قائمة على الطرفية مستوحاة من Zork. جوهر المشروع هو محلل أوامر معقد للغاية، والذي بنيته استنادًا إلى محلل 'Code with Huw'. يفهم اللغة الطبيعية عن طريق تحليل الأوامر بناءً على أنواع الكلمات مثل الأفعال والأسماء والظروف.\n\nتتميز اللعبة بخريطة كبيرة للاستكشاف مع الهدف النهائي المتمثل في العثور على جميع الكنوز المخفية. على الرغم من أنني لم أتمكن من إكمال كل ميزة مخطط لها بالكامل، إلا أن التعقيد التقني والمحلل القوي الذي طورته قد أكسبني درجة عالية وعلمني الكثير عن هندسة البرمجيات."
+    },
+    "images": [],
+    "tags": ["C#", "Game Development", "NLP"],
+    "github": "https://github.com/AlanMet/Zork",
+    "demo": null
   },
   {
-    "titleKey": "proj-shakespeare-title",
-    "descKey": "proj-shakespeare-desc",
-    "tags": ["NLP", "Python"],
-    "link": "https://github.com/AlanMet/ShakespeareGenerator"
+    "id": "proj-adventure-dart",
+    "title": {
+      "en": "Adventure Game in Dart",
+      "fr": "Jeu d'Aventure en Dart",
+      "ar": "لعبة مغامرات بلغة دارت"
+    },
+    "summary": {
+      "en": "A maze-like adventure game with a full UI built in Flutter.",
+      "fr": "Un jeu d'aventure de type labyrinthe avec une interface utilisateur complète en Flutter.",
+      "ar": "لعبة مغامرات شبيهة بالمتاهة مع واجهة مستخدم كاملة مبنية بـ Flutter."
+    },
+    "description": {
+      "en": "Building on my experience with the C# Zork game, I created this adventure game in Dart. Thanks to the similar syntax, I was able to adapt some of the parsing logic for my needs. However, this project had a much greater focus on the user interface.\n\nI built a full front-end UI in Flutter, complete with a dark mode. A unique aspect of this project was the art; I generated all the images myself using AI with ComfyUI. The game itself features a simple map that acts more like a maze, challenging the player to navigate and explore.",
+      "fr": "En m'appuyant sur mon expérience avec le jeu Zork en C#, j'ai créé ce jeu d'aventure en Dart. Grâce à la syntaxe similaire, j'ai pu adapter une partie de la logique d'analyse à mes besoins. Cependant, ce projet était beaucoup plus axé sur l'interface utilisateur.\n\nJ'ai construit une interface utilisateur front-end complète en Flutter, avec un mode sombre. Un aspect unique de ce projet était l'art ; j'ai généré toutes les images moi-même en utilisant l'IA avec ComfyUI. Le jeu lui-même propose une carte simple qui ressemble plus à un labyrinthe, mettant le joueur au défi de naviguer et d'explorer.",
+      "ar": "بناءً على خبرتي في لعبة Zork بلغة C#، قمت بإنشاء لعبة المغامرات هذه بلغة دارت. بفضل التشابه في الصيغة، تمكنت من تكييف بعض منطق التحليل لاحتياجاتي. ومع ذلك، كان هذا المشروع يركز بشكل أكبر على واجهة المستخدم.\n\nلقد قمت ببناء واجهة مستخدم أمامية كاملة في Flutter، مع وضع داكن. كان أحد الجوانب الفريدة لهذا المشروع هو الفن؛ لقد قمت بتوليد جميع الصور بنفسي باستخدام الذكاء الاصطناعي مع ComfyUI. تتميز اللعبة نفسها بخريطة بسيطة تعمل كالمتاهة، مما يتحدى اللاعب في التنقل والاستكشاف."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Dart", "Flutter", "Game Development", "AI Art"],
+    "github": "https://github.com/AlanMet/timeless_echo",
+    "demo": null
   },
   {
-    "titleKey": "proj-cmd-parser-title",
-    "descKey": "proj-cmd-parser-desc",
-    "tags": ["C#", "Dart", "Flutter"],
-    "link": "https://github.com/AlanMet/CommandParser"
+    "id": "proj-smart-home",
+    "title": {
+      "en": "Smart Home UI",
+      "fr": "Interface de Maison Intelligente",
+      "ar": "واجهة مستخدم للمنزل الذكي"
+    },
+    "summary": {
+      "en": "A prototype UI for a smart home application using Python and Tkinter.",
+      "fr": "Une interface utilisateur prototype pour une application de maison intelligente utilisant Python et Tkinter.",
+      "ar": "نموذج أولي لواجهة مستخدم لتطبيق منزل ذكي باستخدام بايثون و Tkinter."
+    },
+    "description": {
+      "en": "This is a basic UI prototype for a smart home application that I built for a University of Portsmouth coursework assignment. It was developed using Python and the Tkinter library. While it's a simpler project and I'm not especially proud of it, it was a valuable exercise in GUI development.\n\nThe application simulates a smart home dashboard where a user can add devices, such as a fridge or lights, and modify their properties, like toggling them on or off. It demonstrates foundational concepts of event-driven programming and state management within a desktop application.",
+      "fr": "Ceci est un prototype d'interface utilisateur de base pour une application de maison intelligente que j'ai réalisé pour un projet de cours de l'Université de Portsmouth. Il a été développé en utilisant Python et la bibliothèque Tkinter. Bien que ce soit un projet plus simple et que je n'en sois pas particulièrement fier, ce fut un exercice précieux en développement d'interfaces graphiques.\n\nL'application simule un tableau de bord de maison intelligente où un utilisateur peut ajouter des appareils, tels qu'un réfrigérateur ou des lumières, et modifier leurs propriétés, comme les allumer ou les éteindre. Elle démontre les concepts fondamentaux de la programmation événementielle et de la gestion d'état dans une application de bureau.",
+      "ar": "هذا نموذج أولي أساسي لواجهة مستخدم لتطبيق منزل ذكي قمت ببنائه لمشروع دراسي في جامعة بورتسموث. تم تطويره باستخدام بايثون ومكتبة Tkinter. على الرغم من أنه مشروع بسيط وأنا لست فخورًا به بشكل خاص، إلا أنه كان تمرينًا قيمًا في تطوير واجهات المستخدم الرسومية.\n\nيحاكي التطبيق لوحة تحكم منزل ذكي حيث يمكن للمستخدم إضافة أجهزة، مثل الثلاجة أو الأضواء، وتعديل خصائصها، مثل تشغيلها أو إيقافها. إنه يوضح المفاهيم الأساسية للبرمجة القائمة على الأحداث وإدارة الحالة داخل تطبيق سطح المكتب."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Python", "Tkinter", "UI/UX"],
+    "github": "https://github.com/AlanMet/SmartHome",
+    "demo": null
   },
   {
-    "titleKey": "proj-rl-ttt-title",
-    "descKey": "proj-rl-ttt-desc",
-    "tags": ["Reinforcement Learning", "Python"],
-    "link": "https://github.com/AlanMet/RL-TicTacToe"
+    "id": "proj-patchwork",
+    "title": {
+      "en": "Patchwork",
+      "fr": "Patchwork",
+      "ar": "باتشورك"
+    },
+    "summary": {
+      "en": "A graphical pattern application built with Python and Zelle's graphics library.",
+      "fr": "Une application de motifs graphiques construite avec Python et la bibliothèque graphique de Zelle.",
+      "ar": "تطبيق رسومي للأنماط مبني بلغة بايثون ومكتبة Zelle الرسومية."
+    },
+    "description": {
+      "en": "Similar to the Smart Home project, this was another piece of coursework built using Python, but this time with Zelle's graphics library. I'm not particularly proud of it, but it posed an interesting technical challenge. The core restriction was that we were not allowed to use objects (classes).\n\nThe UI consists of a grid of tiles (3x3, 4x4, etc.) which contain special drawings. The user can change the colors of different parts of these drawings. To work around the 'no objects' rule, I had to get inventive. I essentially simulated object-oriented behavior by using a list to represent each 'object's' data and a second list to define the current parameters and state of the entire canvas.",
+      "fr": "Similaire au projet Smart Home, c'était un autre projet de cours réalisé en Python, mais cette fois avec la bibliothèque graphique de Zelle. Je n'en suis pas particulièrement fier, mais il a posé un défi technique intéressant. La restriction principale était que nous n'étions pas autorisés à utiliser des objets (classes).\n\nL'interface utilisateur se compose d'une grille de tuiles (3x3, 4x4, etc.) qui contiennent des dessins spéciaux. L'utilisateur peut changer les couleurs des différentes parties de ces dessins. Pour contourner la règle 'sans objets', j'ai dû être inventif. J'ai essentiellement simulé un comportement orienté objet en utilisant une liste pour représenter les données de chaque 'objet' et une seconde liste pour définir les paramètres actuels et l'état de l'ensemble du canevas.",
+      "ar": "على غرار مشروع المنزل الذكي، كان هذا عملًا دراسيًا آخر تم بناؤه باستخدام بايثون، ولكن هذه المرة مع مكتبة Zelle الرسومية. أنا لست فخورًا به بشكل خاص، لكنه طرح تحديًا تقنيًا مثيرًا للاهتمام. كان القيد الأساسي هو أنه لم يكن مسموحًا لنا باستخدام الكائنات (الفئات).\n\nتتكون واجهة المستخدم من شبكة من المربعات (3x3، 4x4، إلخ) تحتوي على رسومات خاصة. يمكن للمستخدم تغيير ألوان أجزاء مختلفة من هذه الرسومات. للتغلب على قاعدة 'عدم استخدام الكائنات'، كان علي أن أكون مبتكرًا. لقد قمت بشكل أساسي بمحاكاة السلوك الموجه للكائنات باستخدام قائمة لتمثيل بيانات كل 'كائن' وقائمة ثانية لتحديد المعلمات الحالية وحالة اللوحة القماشية بأكملها."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Python", "Tkinter", "Graphics"],
+    "github": "https://github.com/AlanMet/PatchworkApp",
+    "demo": null
   },
   {
-    "titleKey": "proj-smart-home-title",
-    "descKey": "proj-smart-home-desc",
-    "tags": ["Python", "Tkinter"],
-    "link": "https://github.com/AlanMet/SmartHomeApp"
+    "id": "proj-study-buddy",
+    "title": {
+      "en": "Study Buddy Finder",
+      "fr": "Chercheur de Partenaire d'Étude",
+      "ar": "الباحث عن زميل دراسة"
+    },
+    "summary": {
+      "en": "A Flutter-based social platform for students with a focus on security.",
+      "fr": "Une plateforme sociale pour étudiants basée sur Flutter avec un accent sur la sécurité.",
+      "ar": "منصة اجتماعية للطلاب تعتمد على Flutter مع التركيز على الأمان."
+    },
+    "description": {
+      "en": "I led a team of 6 to build this study buddy finder application using Flutter with a SQL database. My core focus was on security, specifically dealing with the proper storage of hashed passwords and implementing a correct user recovery process without relying on emails to enhance privacy. \n\nThe application featured a social feed with posts, including videos and special invitations to study sessions. When a user accepted an invitation, it would appear in their schedule. Users could also post their own content, like other posts, and view their profiles. It was a complex project, and although we made significant progress, we couldn't finish it completely due to time constraints.",
+      "fr": "J'ai dirigé une équipe de 6 personnes pour construire cette application de recherche de partenaires d'étude en utilisant Flutter avec une base de données SQL. Mon objectif principal était la sécurité, en particulier la gestion du stockage approprié des mots de passe hachés et la mise en œuvre d'un processus de récupération utilisateur correct sans dépendre des e-mails pour améliorer la confidentialité.\n\nL'application comprenait un fil d'actualité social avec des publications, y compris des vidéos et des invitations spéciales à des sessions d'étude. Lorsqu'un utilisateur acceptait une invitation, elle apparaissait dans son emploi du temps. Les utilisateurs pouvaient également publier leur propre contenu, aimer d'autres publications et consulter leur profil. C'était un projet complexe, et bien que nous ayons réalisé des progrès significatifs, nous n'avons pas pu le terminer complètement en raison de contraintes de temps.",
+      "ar": "قُدتُ فريقًا من 6 أشخاص لبناء تطبيق البحث عن زميل دراسة هذا باستخدام Flutter مع قاعدة بيانات SQL. كان تركيزي الأساسي على الأمان، وتحديدًا التعامل مع التخزين الصحيح لكلمات المرور المجزأة وتنفيذ عملية استرداد صحيحة للمستخدم دون الاعتماد على رسائل البريد الإلكتر الإلكتروني لتعزيز الخصوصية.\n\nتضمن التطبيق موجزًا اجتماعيًا للمنشورات، بما في ذلك مقاطع الفيديو والدعوات الخاصة لجلسات الدراسة. عندما يقبل المستخدم دعوة ما، تظهر في جدوله الزمني. يمكن للمستخدمين أيضًا نشر المحتوى الخاص بهم، والإعجاب بالمنشورات الأخرى، وعرض ملفاتهم الشخصية. لقد كان مشروعًا معقدًا، وعلى الرغم من أننا أحرزنا تقدمًا كبيرًا، إلا أننا لم نتمكن من إكماله بالكامل بسبب ضيق الوقت."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Leadership", "Flutter", "SQL", "Security", "Mobile Development"],
+    "github": "https://github.com/AlanMet/StudyBuddyFinder",
+    "demo": null
   },
   {
-    "titleKey": "proj-patchwork-title",
-    "descKey": "proj-patchwork-desc",
-    "tags": ["Tkinter"],
-    "link": "https://github.com/AlanMet/PatchworkApp"
+    "id": "proj-fl-research",
+    "title": {
+      "en": "Federated Learning Security Research",
+      "fr": "Recherche sur la Sécurité de l'Apprentissage Fédéré",
+      "ar": "بحث في أمان التعلم الفيدرالي"
+    },
+    "summary": {
+      "en": "Researched attack and defense methods for Federated Learning systems.",
+      "fr": "Recherche sur les méthodes d'attaque et de défense pour les systèmes d'Apprentissage Fédéré.",
+      "ar": "بحث في أساليب الهجوم والدفاع لأنظمة التعلم الفيدرالي."
+    },
+    "description": {
+      "en": "In this project, I researched various attack and defense methodologies against federated AI systems. I collaborated with actual AI researchers, where my role was to handle the code implementation. I proposed and developed multiple attack scenarios and their corresponding defensive mechanisms to test the resilience of the system.\n\nThe AI model's purpose was to classify different types of Dark Net traffic, a critical real-world application for cybersecurity. My work involved generating graphs and visualizations to demonstrate the impact of the attacks and the effectiveness of the defenses, contributing to a deeper understanding of federated learning vulnerabilities.",
+      "fr": "Dans ce projet, j'ai étudié diverses méthodologies d'attaque et de défense contre les systèmes d'IA fédérés. J'ai collaboré avec de vrais chercheurs en IA où mon rôle était de gérer l'implémentation du code. J'ai proposé et développé plusieurs scénarios d'attaque et leurs mécanismes de défense correspondants pour tester la résilience du système.\n\nL'objectif du modèle d'IA était de classifier différents types de trafic du Dark Net, une application réelle essentielle pour la cybersécurité. Mon travail consistait à générer des graphiques et des visualisations pour démontrer l'impact des attaques et l'efficacité des défenses, contribuant ainsi à une meilleure compréhension des vulnérabilités de l'apprentissage fédéré.",
+      "ar": "في هذا المشروع، قمت بالبحث في منهجيات الهجوم والدفاع المختلفة ضد أنظمة الذكاء الاصطناعي الفيدرالية. لقد تعاونت مع باحثين فعليين في مجال الذكاء الاصطناعي حيث كان دوري هو التعامل مع تنفيذ الكود. لقد اقترحت وطورت العديد من سيناريوهات الهجوم وآلياتها الدفاعية المقابلة لاختبار مرونة النظام.\n\nكان الغرض من نموذج الذكاء الاصطناعي هو تصنيف أنواع مختلفة من حركة مرور الشبكة المظلمة، وهو تطبيق حقيقي حاسم للأمن السيبراني. تضمن عملي إنشاء رسوم بيانية وتصورات لإظهار تأثير الهجمات وفعالية الدفاعات، مما ساهم في فهم أعمق لنقاط ضعف التعلم الفيدرالي."
+    },
+    "images": ["images/preview.png"],
+    "tags": ["Research", "Cybersecurity", "Python", "Federated Learning", "AI"],
+    "github": "https://github.com/AlanMet/FL-Research",
+    "demo": null
   }
 ]
