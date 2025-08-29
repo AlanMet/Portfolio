@@ -55,7 +55,7 @@ function renderProjects(projectsData) {
     // New format: has id, title, summary, description
     if (project.id && project.title && project.title[lang]) {
       const hasDetail = project.description && project.description[lang];
-      const url = hasDetail ? `project-detail.html?id=${project.id}` : project.github;
+      const url = hasDetail ? `project-detail.html?id=${project.id}&lang=${lang}` : project.github;
       const projectCardHtml = `
         <a href="${url}" target="${hasDetail ? '_self' : '_blank'}" rel="noopener noreferrer" class="project-link">
           <article class="project-card" style="border-left-color: ${mixedBorderColor};">
@@ -97,6 +97,7 @@ async function initializeProjects() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const projectsData = await response.json();
+    window._projectsData = projectsData; // Store for re-rendering
     renderProjects(projectsData);
   } catch (error) {
     console.error("Could not fetch or render projects:", error);

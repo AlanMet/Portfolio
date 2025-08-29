@@ -84,7 +84,12 @@ function getInitialLanguage(){
 }
 
 function changeLanguage(event) {
-    setLanguage(event.target.value);
+    const newLang = event.target.value;
+    setLanguage(newLang);
+    // If project data is available, re-render the grid
+    if (window._projectsData) {
+        renderProjects(window._projectsData);
+    }
 }
 
 async function loaded() {

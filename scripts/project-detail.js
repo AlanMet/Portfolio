@@ -30,16 +30,47 @@ function renderProjectDetail(projects) {
   let proj = projects.find(p => p.id === id);
   if (!proj && projects.length) proj = projects[0];
   if (!proj) return;
+  let currentImageIndex = 0;
+
   // Title
   document.getElementById('project-title').textContent = proj.title?.[lang] || proj.title?.en || 'Untitled';
-  // Image
+
+  // Image Gallery
+  const imageContainer = document.querySelector('.project-image-container');
   const imgEl = document.getElementById('project-image');
-  if (proj.images && proj.images.length) {
-    imgEl.src = proj.images[0];
-    imgEl.style.display = '';
-  } else {
-    imgEl.style.display = 'none';
+  const prevBtn = document.getElementById('prev-image-btn');
+  const nextBtn = document.getElementById('next-image-btn');
+  const counterEl = document.getElementById('image-counter');
+
+  function updateImage() {
+    if (proj.images && proj.images.length > 0) {
+      imgEl.src = proj.images[currentImageIndex];
+      counterEl.textContent = `${currentImageIndex + 1} / ${proj.images.length}`;
+    }
   }
+
+  if (proj.images && proj.images.length > 0) {
+    imageContainer.style.display = 'flex';
+    updateImage();
+
+    const showNav = proj.images.length > 1;
+    prevBtn.style.display = showNav ? 'flex' : 'none';
+    nextBtn.style.display = showNav ? 'flex' : 'none';
+    counterEl.style.display = showNav ? 'block' : 'none';
+
+    prevBtn.onclick = () => {
+      currentImageIndex = (currentImageIndex - 1 + proj.images.length) % proj.images.length;
+      updateImage();
+    };
+
+    nextBtn.onclick = () => {
+      currentImageIndex = (currentImageIndex + 1) % proj.images.length;
+      updateImage();
+    };
+  } else {
+    imageContainer.style.display = 'none';
+  }
+
   // Tags (with color)
   const tagsEl = document.getElementById('project-tags');
   tagsEl.innerHTML = proj.tags ? proj.tags.map(tag => {

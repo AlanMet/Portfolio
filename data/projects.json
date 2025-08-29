@@ -7,8 +7,8 @@
       "ar": "موقع وكالة متكامل"
     },
     "summary": {
-      "en": "A bespoke, multi-language, and responsive commercial website for a French travel agency.",
-      "fr": "Un site web commercial sur mesure, multilingue et adaptatif pour une agence de voyage française.",
+      "en": "A bespoke, multi-language, and responsive website for a French travel agency.",
+      "fr": "Un site web commercial, pour une agence de voyage française.",
       "ar": "موقع تجاري مخصص متعدد اللغات ومتجاوب لوكالة سفر فرنسية."
     },
     "description": {
@@ -16,8 +16,8 @@
       "fr": "Ce projet a impliqué le développement de bout en bout d'un site web commercial pour Lazulinile, une agence de voyage française. L'objectif principal était de créer une présence numérique professionnelle et multilingue pour attirer une clientèle internationale et présenter leurs offres de voyage.\n\nLe site est construit sur une pile web moderne, avec un front-end adaptatif qui garantit une expérience utilisateur fluide sur tous les appareils. Une caractéristique architecturale clé est son cadre d'internationalisation (i18n) robuste, qui permet une gestion facile du contenu en plusieurs langues. Le backend gère en toute sécurité la livraison de contenu et les formulaires de contact client.\n\nLe produit final est un site web performant et en ligne qui répond actuellement aux besoins commerciaux du client. Le dépôt GitHub est privé pour protéger les informations propriétaires et la logique métier du client.",
       "ar": "شمل هذا المشروع التطوير الشامل لموقع ويب تجاري لوكالة سفر فرنسية تدعى لازولينيل. كان الهدف الأساسي هو إنشاء وجود رقمي احترافي متعدد اللغات لجذب عملاء دوليين وعرض باقات السفر الخاصة بهم.\n\nتم بناء الموقع على حزمة تقنيات ويب حديثة، ويتميز بواجهة أمامية متجاوبة تضمن تجربة مستخدم سلسة عبر جميع الأجهزة. من السمات المعمارية الرئيسية إطار التدويل (i18n) القوي، والذي يسمح بإدارة سهلة للمحتوى بلغات متعددة. تتعامل الواجهة الخلفية بشكل آمن مع تسليم المحتوى ونماذج الاتصال بالعملاء.\n\nالمنتج النهائي هو موقع ويب مباشر وعالي الأداء يخدم حاليًا احتياجات العميل التجارية. مستودع GitHub خاص لحماية معلومات العميل المسجلة والمنطق التجاري."
     },
-    "images": ["images/preview.png"],
-    "tags": ["Full-Stack", "Web Development", "JavaScript", "i18n"],
+    "images": ["images/lazulinile-1.png", "images/lazulinile-2.png"],
+    "tags": ["Full-Stack", "Web Development", "JavaScript"],
     "github": null,
     "demo": "https://lazulinile.com"
   },
@@ -25,12 +25,12 @@
     "id": "proj-fullstack-crypto",
     "title": {
       "en": "Full-Stack Blockchain Simulator",
-      "fr": "Simulateur de Blockchain Full-Stack",
+      "fr": "Blockchain Full-Stack",
       "ar": "محاكي بلوكتشين متكامل"
     },
     "summary": {
       "en": "A full-stack web application featuring a functional blockchain simulation in Python.",
-      "fr": "Une application web full-stack avec une simulation fonctionnelle de blockchain en Python.",
+      "fr": "Une application web full-stack avec une simulation de blockchain en Python.",
       "ar": "تطبيق ويب متكامل يتميز بمحاكاة بلوكتشين وظيفية بلغة بايثون."
     },
     "description": {
@@ -38,7 +38,7 @@
       "fr": "Ce projet sert de preuve de concept pour une plateforme de cryptomonnaie full-stack, conçue pour démontrer une compréhension complète des principes fondamentaux de la blockchain et de l'architecture des applications web.\n\nLe backend est implémenté à partir de zéro en Python et simule une blockchain complète. Il inclut des fonctionnalités de base telles que le hachage cryptographique, un algorithme de minage par preuve de travail et la validation des transactions. Une API RESTful connecte le client au backend de la blockchain.\n\nLe système dispose d'une couche d'authentification utilisateur robuste. Les transactions sont diffusées sur le réseau et ne sont considérées comme définitives qu'une fois incluses dans un bloc miné avec succès, imitant ainsi fidèlement le comportement des cryptomonnaies réelles.",
       "ar": "يعمل هذا المشروع كإثبات لمفهوم منصة عملات مشفرة متكاملة، مصممة لإظهار فهم شامل لكل من أساسيات البلوكتشين وهندسة تطبيقات الويب.\n\nتم تنفيذ الواجهة الخلفية من الصفر بلغة بايثون وهي تحاكي بلوكتشين كاملة. تتضمن وظائف أساسية مثل التجزئة المشفرة، وخوارزمية إثبات العمل للتعدين، والتحقق من صحة المعاملات. تربط واجهة برمجة تطبيقات RESTful العميل بالواجهة الخلفية للبلوكتشين.\n\nيتميز النظام بطبقة مصادقة مستخدم قوية. يتم بث المعاملات إلى الشبكة ولا تعتبر نهائية إلا بعد تضمينها في كتلة تم تعدينها بنجاح، مما يحاكي بدقة سلوك العملات المشفرة في العالم الحقيقي."
     },
-    "images": ["images/preview.png"],
+    "images": ["images/crypto-1.png", "images/crypto-2.png"],
     "tags": ["Full-Stack", "Python", "Blockchain", "REST API"],
     "github": "https://github.com/AlanMet/Full-Stack-Crypto",
     "demo": null
@@ -46,13 +46,13 @@
   {
     "id": "proj-study-buddy",
     "title": {
-      "en": "Secure Mobile Collaboration Platform",
-      "fr": "Plateforme Mobile de Collaboration Sécurisée",
+      "en": "Secure study Platform",
+      "fr": "Plateforme d'étude Sécurisée",
       "ar": "منصة تعاون متنقلة آمنة"
     },
     "summary": {
       "en": "A secure, Flutter-based mobile platform for student collaboration and scheduling.",
-      "fr": "Une plateforme mobile sécurisée, basée sur Flutter, pour la collaboration et la planification étudiante.",
+      "fr": "Une plateforme sécurisée, basée sur Flutter, pour la planification étudiante.",
       "ar": "منصة متنقلة آمنة تعتمد على Flutter لتعاون الطلاب وجدولة المواعيد."
     },
     "description": {
@@ -60,7 +60,7 @@
       "fr": "Ce projet était un effort d'équipe visant à développer une application mobile pour faciliter la collaboration étudiante. L'objectif principal était de construire une plateforme sécurisée et intuitive où les étudiants pourraient se connecter, planifier des sessions d'étude et partager du contenu académique.\n\nL'application a été développée avec Flutter pour un déploiement multiplateforme et utilisait une base de données SQL pour la persistance des données. Une contribution personnelle clé a été la conception et la mise en œuvre de l'architecture de sécurité. Cela comprenait un hachage de mot de passe robuste et un mécanisme de récupération de compte novateur sans e-mail pour améliorer la confidentialité et la sécurité des utilisateurs.\n\nLes fonctionnalités incluaient un fil de contenu dynamique avec prise en charge de la vidéo, un système de planification intégré au calendrier personnel de l'utilisateur et des fonctionnalités sociales comme la publication et les 'j'aime'. Le projet a démontré des compétences en leadership d'équipe, en développement mobile et en conception d'applications sécurisées.",
       "ar": "كان هذا المشروع جهدًا قاده فريق لتطوير تطبيق محمول يهدف إلى تسهيل تعاون الطلاب. كان الهدف الأساسي هو بناء منصة آمنة وبديهية حيث يمكن للطلاب التواصل وجدولة جلسات الدراسة ومشاركة المحتوى الأكاديمي.\n\nتم بناء التطبيق باستخدام Flutter للنشر عبر المنصات واستخدم قاعدة بيانات SQL لاستمرارية البيانات. كانت المساهمة الشخصية الرئيسية هي تصميم وتنفيذ بنية الأمان. وشمل ذلك تجزئة قوية لكلمات المرور وآلية جديدة لاستعادة الحساب بدون بريد إلكتروني لتعزيز خصوصية المستخدم وأمانه.\n\nشملت الوظائف موجز محتوى ديناميكي مع دعم الفيديو، ونظام جدولة يتكامل مع تقويم المستخدم الشخصي، وميزات اجتماعية مثل النشر والإعجاب. أظهر المشروع مهارات في قيادة الفريق، وتطوير الأجهزة المحمولة، وتصميم التطبيقات الآمنة."
     },
-    "images": ["images/preview.png"],
+    "images": [],
     "tags": ["Leadership", "Flutter", "SQL", "Security", "Mobile Development"],
     "github": "https://github.com/AlanMet/StudyBuddyFinder",
     "demo": null
@@ -69,12 +69,12 @@
     "id": "proj-fl-research",
     "title": {
       "en": "Novel FL Attack & Defense",
-      "fr": "Nouvelles Attaques & Défenses FL",
+      "fr": "Attaques & Défenses FL",
       "ar": "هجوم ودفاع FL مبتكر"
     },
     "summary": {
       "en": "Researched and implemented new attack and defense mechanisms for federated learning.",
-      "fr": "Recherche et implémentation de nouveaux mécanismes d'attaque et de défense pour l'apprentissage fédéré.",
+      "fr": "Recherche de mécanismes d'attaque et de défense pour l'intelligence artificielle.",
       "ar": "بحث وتنفيذ آليات هجوم ودفاع جديدة للتعلم الفيدرالي."
     },
     "description": {
@@ -82,7 +82,7 @@
       "fr": "Cette recherche aborde les vulnérabilités de sécurité critiques de l'Apprentissage Fédéré (FL). En collaboration avec des chercheurs en IA, le projet a consisté à créer et à formaliser de nouvelles méthodologies d'attaque pour tester rigoureusement la résilience du système, tout en développant de nouveaux mécanismes de défense pour contrer ces menaces. Cela comprenait la conception d'algorithmes capables d'identifier et d'isoler les mises à jour de modèles malveillantes.\n\nL'objectif du modèle d'IA était de classifier différents types de trafic du Dark Net. Les attaques et les défenses ont été implémentées en Python, et les résultats, visualisés dans des graphiques, démontrent une amélioration significative de la robustesse du modèle contre les attaques avancées, contribuant ainsi au développement de systèmes d'IA distribués plus fiables.",
       "ar": "يتناول هذا البحث الثغرات الأمنية الحرجة في التعلم الفيدرالي (FL). بالتعاون مع باحثي الذكاء الاصطناعي، تضمن المشروع إنشاء وتأطير منهجيات هجوم مبتكرة لاختبار مرونة النظام بدقة، إلى جانب تطوير آليات دفاع جديدة لمواجهة هذه التهديدات. وشمل ذلك تصميم خوارزميات قادرة على تحديد وعزل تحديثات النموذج الخبيثة.\n\nكان الغرض من نموذج الذكاء الاصطناعي هو تصنيف أنواع مختلفة من حركة مرور الشبكة المظلمة. تم تنفيذ الهجمات والدفاعات بلغة بايثون، وتظهر النتائج، التي تم تصورها في الرسوم البيانية، تحسنًا كبيرًا في متانة النموذج ضد الهجمات المتقدمة، مما يساهم في تطوير أنظمة ذكاء اصطناعي موزعة أكثر جدارة بالثقة."
     },
-    "images": ["images/preview.png"],
+    "images": [],
     "tags": ["Research", "Cybersecurity", "Python", "Machine Learning"],
     "github": "https://github.com/AlanMet/FL-Research",
     "demo": null
@@ -112,8 +112,8 @@
   {
     "id": "proj-dart-matrix",
     "title": {
-      "en": "Dart Numerical Computing Library",
-      "fr": "Bibliothèque de Calcul Numérique en Dart",
+      "en": "Dart Matrix Library",
+      "fr": "Bibliothèque de Matrices en Dart",
       "ar": "مكتبة الحوسبة الرقمية بدارت"
     },
     "summary": {
@@ -135,12 +135,12 @@
     "id": "proj-zork-remake",
     "title": {
       "en": "C# Language Parser Engine",
-      "fr": "Moteur d'Analyse de Langage C#",
+      "fr": "Jeux Textuelle C#",
       "ar": "محرك تحليل لغة C#"
     },
     "summary": {
       "en": "A terminal-based adventure game engine with a custom natural language parser.",
-      "fr": "Un moteur de jeu d'aventure en mode texte avec un analyseur de langage naturel personnalisé.",
+      "fr": "Un moteur de jeu d'aventure en mode texte avec un analyseur de langage naturel.",
       "ar": "محرك لعبة مغامرات نصي مع محلل لغة طبيعية مخصص."
     },
     "description": {
@@ -170,7 +170,7 @@
       "fr": "Timeless Echo est une réinterprétation moderne des jeux d'aventure textuels classiques, conçue comme une application mobile utilisant Flutter. Il offre une expérience de fiction interactive dynamique et captivante, dépassant les récits statiques pour créer un monde persistant pour le joueur.\n\nL'interface front-end est entièrement construite en Flutter, avec une interface utilisateur personnalisée et réactive, dotée de modes clair et sombre. Un aspect unique de ce projet était son utilisation de modèles d'IA exécutés localement (via ComfyUI) pour la génération d'images dynamiques, dans le but d'améliorer le récit et de créer une expérience plus immersive et visuellement riche pour le joueur.",
       "ar": "Timeless Echo هو إعادة تصور حديثة لألعاب المغامرات النصية الكلاسيكية، تم بناؤه كتطبيق محمول باستخدام Flutter. يوفر تجربة خيال تفاعلي ديناميكية وجذابة، تتجاوز السرد الثابت لإنشاء عالم مستمر للاعب.\n\nتم بناء الواجهة الأمامية بالكامل باستخدام Flutter، وتتميز بواجهة مستخدم مخصصة ومتجاوبة مع وضعي الإضاءة الفاتح والداكن. كان أحد الجوانب الفريدة لهذا المشروع هو استخدامه لنماذج الذكاء الاصطناعي التي تعمل محليًا (عبر ComfyUI) لتوليد الصور الديناميكية، بهدف تعزيز السرد وإنشاء تجربة غامرة وأكثر ثراءً بصريًا للاعب."
     },
-    "images": ["images/preview.png"],
+    "images": ["images/timeless-1.png"],
     "tags": ["Flutter", "Firebase", "Mobile", "Game Development", "AI Art"],
     "github": "https://github.com/AlanMet/timeless_echo",
     "demo": null
@@ -178,13 +178,13 @@
   {
     "id": "proj-smart-home",
     "title": {
-      "en": "Desktop GUI Application Prototype",
-      "fr": "Prototype d'Application GUI de Bureau",
+      "en": "Desktop GUI Prototype",
+      "fr": "Prototype d'Application GUI",
       "ar": "نموذج أولي لتطبيق واجهة مستخدم رسومية لسطح المكتب"
     },
     "summary": {
       "en": "A desktop GUI prototype for a smart home dashboard using Python and Tkinter.",
-      "fr": "Un prototype d'interface graphique pour un tableau de bord de maison intelligente utilisant Python et Tkinter.",
+      "fr": "Un prototype d'interface pour un tableau de bord de maison intelligente utilisant Tkinter.",
       "ar": "نموذج أولي لواجهة مستخدم رسومية لسطح المكتب للوحة تحكم منزل ذكي باستخدام بايثون و Tkinter."
     },
     "description": {
@@ -192,7 +192,7 @@
       "fr": "Ce projet, développé pour un travail universitaire, est un prototype de tableau de bord de gestion de maison intelligente. L'objectif était d'appliquer les principes fondamentaux du développement d'interfaces utilisateur graphiques (GUI) et de la programmation événementielle dans un environnement de bureau.\n\nConstruite entièrement en Python à l'aide de la bibliothèque standard Tkinter, l'application fournit une interface visuelle pour la gestion d'appareils intelligents simulés. Les utilisateurs peuvent ajouter de nouveaux appareils à un tableau de bord central et modifier leur état (par ex. marche/arrêt). L'état de l'application est géré localement, démontrant les concepts de base de l'architecture d'application GUI.",
       "ar": "هذا المشروع، الذي تم تطويره لمهمة دراسية جامعية، هو نموذج أولي للوحة تحكم لإدارة المنزل الذكي. كان الهدف هو تطبيق المبادئ الأساسية لتطوير واجهة المستخدم الرسومية (GUI) والبرمجة القائمة على الأحداث في بيئة سطح المكتب.\n\nتم بناء التطبيق بالكامل بلغة بايثون باستخدام مكتبة Tkinter القياسية، ويوفر واجهة مرئية لإدارة الأجهزة الذكية المحاكاة. يمكن للمستخدمين إضافة أجهزة جديدة إلى لوحة تحكم مركزية وتعديل حالتها (مثل التشغيل/الإيقاف). تتم إدارة حالة التطبيق محليًا، مما يوضح المفاهيم الأساسية لهندسة تطبيقات واجهة المستخدم الرسومية."
     },
-    "images": ["images/preview.png"],
+    "images": ["images/smart-1.png"],
     "tags": ["Python", "Tkinter", "UI/UX", "Desktop Application"],
     "github": "https://github.com/AlanMet/SmartHome",
     "demo": null
@@ -214,7 +214,7 @@
       "fr": "Cette application de bureau graphique permet aux utilisateurs de créer et de modifier visuellement des motifs de courtepointe en patchwork. Conçue en Python à l'aide de la bibliothèque graphique de Zelle pour un projet universitaire, elle fournit un outil interactif pour les designers et les amateurs.\n\nUn défi technique clé était une restriction interdisant l'utilisation de classes orientées objet. Cela a été surmonté en simulant le comportement des objets à l'aide de listes pour gérer l'état et les propriétés des éléments graphiques sur le canevas. L'application est entièrement pilotée par les événements, réagissant aux clics de souris pour la sélection et les changements de couleur, démontrant une solution créative à une contrainte de programmation courante.",
       "ar": "يتيح تطبيق سطح المكتب الرسومي هذا للمستخدمين إنشاء وتعديل أنماط لحاف المرقعة بشكل مرئي. تم بناؤه بلغة بايثون باستخدام مكتبة Zelle's Graphics لمهمة جامعية، وهو يوفر أداة تفاعلية للمصممين والهواة.\n\nكان التحدي التقني الرئيسي هو قيد يمنع استخدام الفئات الموجهة للكائنات. تم التغلب على ذلك عن طريق محاكاة سلوك الكائنات باستخدام القوائم لإدارة حالة وخصائص العناصر الرسومية على اللوحة. التطبيق مدفوع بالكامل بالأحداث، ويستجيب لنقرات الماوس للاختيار وتغييرات الألوان، مما يوضح حلاً إبداعيًا لقيود البرمجة الشائعة."
     },
-    "images": ["images/preview.png"],
+    "images": ["images/patchwork-1.png"],
     "tags": ["Python", "Graphics", "Tkinter"],
     "github": "https://github.com/AlanMet/PatchworkApp",
     "demo": null

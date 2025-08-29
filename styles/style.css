@@ -574,44 +574,6 @@ body.nav-open::after {
 .nav-open .mobile-nav-bottom .lang-switcher { transition-delay: 0.95s; }
 .nav-open .mobile-nav-bottom .nav-action-icon { transition-delay: 1.05s; }
 
-/* --- Responsive Media Queries --- */
-@media (max-width: 768px) {
-    .about-content { grid-template-columns: 1fr; }
-    .about-main-title { font-size: 2.5rem; max-width: 100%; }
-    .about-grid { grid-template-columns: 1fr; }
-    .grid-column { padding-right: 0; padding-bottom: 2rem; }
-    .grid-column:last-child { padding-bottom: 0; }
-    .projects-main-title { font-size: 2.5rem; }
-    .projects-grid { grid-template-columns: 1fr; }
-    .project-card {
-        width: 80dvw;
-        height: auto;
-        min-width: 0;
-        max-width: 100%;
-    }
-    body::before {
-        display: none !important;
-    }
-}
-
-@media (max-width: 675px) {
-    .left-nav a,
-    .right-nav {
-        display: none;
-    }
-    .nav-toggle {
-        display: flex;
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        margin: 0;
-        padding: 0;
-        width: 44px;
-        height: 44px;
-        box-sizing: border-box;
-    }
-}
-
 /* ============================================= */
 /* === STYLES FOR NEW PROJECT DETAIL SECTION === */
 /* ============================================= */
@@ -623,6 +585,9 @@ body.nav-open::after {
     padding: 0 2rem;
     flex: 1; /* Ensures it takes up available space */
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-align all direct children */
 }
 
 /* Back button with left arrow and underline */
@@ -645,16 +610,84 @@ body.nav-open::after {
     font-size: 3rem;
     font-weight: bold;
     color: var(--text-color);
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0; /* Reduced bottom margin */
+}
+
+/* NEW: Image container for arrows and counter */
+.project-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Max width of the image area */
+    aspect-ratio: 16 / 9; /* Enforce a 16:9 aspect ratio */
+    margin-bottom: 1rem; /* Reduced bottom margin */
+    overflow: hidden; /* Hide parts of the image that overflow */
+    border-radius: 8px;
+    background-color: #2a2a2a; /* Dark placeholder for loading */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Project Image */
 .project-image {
-    width: 75%;
-    height: auto;
-    border-radius: 8px; /* Optional: adds rounded corners */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fit image within the container without stretching */
+    display: block;
+}
+
+/* NEW: Navigation buttons (arrows) */
+.image-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    opacity: 0; /* Hidden by default */
+}
+
+.project-image-container:hover .image-nav-btn {
+    opacity: 1; /* Show on hover */
+}
+
+.image-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-nav-btn.prev {
+    left: 10px;
+}
+
+.image-nav-btn.next {
+    right: 10px;
+}
+
+/* NEW: Image counter (e.g., "1 / 3") */
+.image-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+/* Tags are now closer to the image */
+.project-tags {
     margin-bottom: 1.5rem;
-    background-color: #ccc; /* Placeholder color */
 }
 
 /* Container for GitHub and Demo links */
@@ -691,6 +724,7 @@ body.nav-open::after {
     margin-bottom: 2rem;
     border-left: 3px solid var(--text-color); /* Adds a little emphasis */
     padding-left: 1rem;
+    margin-bottom: 1.5rem; /* Reduced margin */
 }
 
 /* Long description section */
@@ -714,5 +748,17 @@ body.nav-open::after {
     .project-detail-container {
         padding: 0 1rem;
         margin-top: 1rem;
+        align-items: center; /* Center content on mobile */
+    }
+
+    .project-image-container {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .project-summary,
+    .project-description,
+    .project-links,
+    .project-tags {
+        align-self: flex-start; /* Re-align text to the left on mobile */
     }
 }

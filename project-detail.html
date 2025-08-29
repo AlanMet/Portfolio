@@ -76,7 +76,12 @@
 
             <h1 class="project-title" id="project-title"></h1>
 
-            <img src="" alt="Project main image" class="project-image" id="project-image" style="display:none;">
+            <div class="project-image-container" style="display: none;">
+                <img src="" alt="Project main image" class="project-image" id="project-image">
+                <button class="image-nav-btn prev" id="prev-image-btn" aria-label="Previous image"><i class="ri-arrow-left-s-line"></i></button>
+                <button class="image-nav-btn next" id="next-image-btn" aria-label="Next image"><i class="ri-arrow-right-s-line"></i></button>
+                <div class="image-counter" id="image-counter"></div>
+            </div>
 
             <div class="project-tags" id="project-tags"></div>
 
