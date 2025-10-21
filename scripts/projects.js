@@ -79,9 +79,11 @@ function renderProjects(projectsData) {
         const color = tagColors && tagColors[tag] ? tagColors[tag] : (tagColors && tagColors.default ? tagColors.default : '#eee');
         return `<span style="background-color: ${color};">${tag}</span>`;
       }).join('');
-      if (typeof mixColors === 'function') {
+      if (project.tags && project.tags.length) {
+        // Pick a single tag color at random instead of averaging so the color stays bright.
         const tagColorValues = project.tags.map(tag => tagColors && tagColors[tag] ? tagColors[tag] : (tagColors && tagColors.default ? tagColors.default : '#eee'));
-        mixedBorderColor = mixColors(tagColorValues);
+        const randomIndex = Math.floor(Math.random() * tagColorValues.length);
+        mixedBorderColor = tagColorValues[randomIndex];
       }
     }
 
