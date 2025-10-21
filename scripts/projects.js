@@ -1,15 +1,48 @@
-// A color map for technology tags.
 const tagColors = {
-  "JavaScript": "#F7DF1E", "Python": "#3776AB", "Dart": "#0175C2", "C#": "#9B4F96",
-  "Flutter": "#02569B", "Tkinter": "#FFD580", "Machine Learning": "#F9872A", "NLP": "#4CAF50",
-  "Reinforcement Learning": "#E91E63", "WebSockets": "#2196F3", "Firebase": "#FFCA28",
-  "Leadership": "#607D8B", "Research": "#795548", "Cybersecurity": "#F44336",
-  "Linear Algebra": "#00BCD4", "UX Design": "#009688", "From Scratch": "#8BC34A",
-  "Library": "#9C27B0", "Mobile": "#FF9800", "Game Development": "#E91E63",
-  ".NET": "#512BD4", "Engine": "#607D8B", "Numerical Computing": "#2196F3",
-  "Security": "#F44336", "Encryption": "#795548", "Node.js": "#339933",
-  "TypeScript": "#3178C6", "AI": "#FF6F00", "LLM": "#FF5722",
-  "Graphics": "#4CAF50", "JWT": "#000000", "default": "#6c757d"
+  // Existing Tags - Brighter/Distinct Colors
+  "JavaScript": "#F7DF1E", // Kept bright yellow
+  "Python": "#3498DB",     // Brighter blue
+  "Dart": "#40C4FF",     // Lighter, vibrant blue
+  "C#": "#A020F0",     // Vibrant purple
+  "Flutter": "#42A5F5",     // Material Design blue
+  "Tkinter": "#FFA726",     // Brighter orange
+  "Machine Learning": "#FF7043", // Deep Orange (more distinct from other oranges)
+  "NLP": "#66BB6A",     // Brighter green
+  "Reinforcement Learning": "#EC407A", // Vibrant pink
+  "WebSockets": "#29B6F6",     // Light Blue
+  "Firebase": "#FFCA28",     // Kept yellow-orange
+  "Leadership": "#26A69A",     // Teal
+  "Research": "#BA68C8",     // Light Purple
+  "Cybersecurity": "#EF5350", // Slightly lighter red
+  "Linear Algebra": "#26C6DA", // Brighter cyan
+  "UX Design": "#00ACC1",     // Stronger Cyan/Teal
+  "From Scratch": "#9CCC65",     // Brighter light green
+  "Library": "#AB47BC",     // Medium Purple
+  "Mobile": "#FFA000",     // Amber/Orange
+  "Game Development": "#EF5350", // Red (Distinct)
+  ".NET": "#7E57C2",     // Deep Purple
+  "Engine": "#FF7043",     // Deep Orange
+  "Numerical Computing": "#5C6BC0", // Indigo
+  "Security": "#F44336",     // Kept Red
+  "Encryption": "#78909C",     // Blue Grey
+  "Node.js": "#8CC84B",     // Brighter Node green
+  "TypeScript": "#3178C6",     // Kept TypeScript blue
+  "AI": "#FF9100",     // Vibrant Orange
+  "LLM": "#FF6D00",     // Strong Orange
+  "Graphics": "#4CAF50",     // Kept green
+  "JWT": "#757575",     // Medium Grey
+  "default": "#BDBDBD",     // Lighter gray
+
+  // Added Tags from your JSON data
+  "Full-Stack": "#7E57C2",      // Deep Purple (shared with .NET for consistency)
+  "Web Development": "#29B6F6", // Light Blue (shared with WebSockets)
+  "Blockchain": "#FFD54F",      // Amber
+  "REST API": "#B0BEC5",      // Light Blue Grey
+  "SQL": "#D32F2F",      // Darker Red
+  "Mobile Development": "#FFB74D", // Light Orange
+  "UI/UX": "#AB47BC",         // Medium Purple (shared with Library)
+  "Desktop Application": "#546E7A", // Dark Blue Grey
+  "AI Art": "#F06292"       // Light Pink
 };
 
 
