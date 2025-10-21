@@ -1,5 +1,6 @@
 const defaultLanguage = "en";
-const languagePath = "/languages/";
+// Use a relative path so GitHub Pages (repo subpath) resolves correctly
+const languagePath = "./languages/";
 const languageSelectors = document.querySelectorAll("#lang-select, #mobile-lang-select");
 
 function setLanguage(lang) {
@@ -37,7 +38,7 @@ function fetchTranslationData(lang) {
     }
 
     console.log(`Fetching ${lang}...`);
-    return fetch(`./languages/${lang}.json`)
+    return fetch(`${languagePath}${lang}.json`)
         .then(response => {
             if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
             return response.json();
@@ -48,6 +49,11 @@ function fetchTranslationData(lang) {
         })
         .catch(err => {
             console.error("Translation load error:", err.message);
+            // Fallback to default language if available
+            if (lang !== defaultLanguage) {
+                console.log(`Falling back to default language: ${defaultLanguage}`);
+                return fetchTranslationData(defaultLanguage);
+            }
         });
 }
 
@@ -58,13 +64,16 @@ function loadAndApplyTranslations(lang) {
 }
 
 function isRightToLeft(lang) {
-    const rtlLanguages = ["ar", "ja"];
+    // Only Arabic should force RTL for this site. Japanese is LTR.
+    const rtlLanguages = ["ar"];
     return rtlLanguages.includes(lang);
 }
 
 function setLanguageAttributes(lang) {
     document.documentElement.lang = lang;
-    document.documentElement.dir = isRightToLeft(lang) ? "rtl" : "ltr";
+    const dir = isRightToLeft(lang) ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
+    console.log(`Language attributes set: lang=${lang}, dir=${dir}`);
 }
 
 function configurePageLanguage(lang) {
